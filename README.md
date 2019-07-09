@@ -1,6 +1,4 @@
-# Big Data Architectures for Investment Banking: Exercise
-
-## Introduction
+# Big Data Architectures for Investment Banking
 
 Welcome to the "**Big Data Architectures for Investment Banking**" exercise.
 
