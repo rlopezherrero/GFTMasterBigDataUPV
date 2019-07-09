@@ -1,12 +1,14 @@
-# Introduction
+# Big Data Architectures for Investment Banking: Exercise
 
-Welcome to the "Big Data Architectures for Investment Banking" exercise.
+## Introduction
+
+Welcome to the "**Big Data Architectures for Investment Banking**" exercise.
 
 In this exercise you will build a complete end to end Big Data Streaming Architecture.
 
-<<ADD DIAGRAM>>
+--ADD DIAGRAM--
 
-# Course outline
+## Course outline
 
 Follow the links below to access each exercise's details, code, etc.
 

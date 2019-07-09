@@ -1,8 +1,8 @@
-# Introduction
+# Exercise 1: Data Ingestion
+
+## Introduction
 
 In this exercise you will connect to your data sources and store the data into a file, using Apache NiFi.
-
-# Exercise
 
 ## Data sources
 
