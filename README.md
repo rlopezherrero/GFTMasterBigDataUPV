@@ -10,7 +10,7 @@ In this exercise you will build a complete end to end Big Data Streaming Archite
 
 Follow the links below to access each exercise's details, code, etc.
 
-* [Exercise 1: Setup](exercise0_setup)
+* [Exercise 0: Setup](exercise0_setup)
 * [Exercise 1: Data Ingestion](exercise1_data_ingestion)
 * [Exercise 2: Data Processing](exercise2_data_processing)
 * [Exercise 3: Data Storage](exercise3_data_storage)
