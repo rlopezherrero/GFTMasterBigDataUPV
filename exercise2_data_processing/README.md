@@ -43,3 +43,5 @@ confluent-5.2.2\bin\windows\schema-registry-start.bat etc\schema-registry\schema
 	* Add those  two steps on src/main/java/com/gft/upv/flink/StreaminStockJob.java
 * Kafa tool for Output Visualization
 	* Connect  to quotesEnriched topic and see output messages. 
+	
+In case you need help, you can check Flink API here --> https://ci.apache.org/projects/flink/flink-docs-release-1.8/dev/datastream_api.html

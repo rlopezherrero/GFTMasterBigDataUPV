@@ -29,3 +29,4 @@ bin\kibana
 * Add sink process to the pipeline on src/main/java/com/gft/upv/flink/StreaminStockJob.java
 * Implement document storage on src/main/java/com/gft/upv/flink/proccess/StockElasticSink.java
 
+In case you need help, you can check ElasticSink API here --> https://ci.apache.org/projects/flink/flink-docs-stable/dev/connectors/elasticsearch.html
