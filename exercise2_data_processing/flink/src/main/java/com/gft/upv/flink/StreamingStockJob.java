@@ -86,20 +86,15 @@ public class StreamingStockJob {
 		DataStream<GenericRecord> quotesStream = env
 			.addSource(new FlinkKafkaConsumer010<>(this.topic, serde, jobProperties));
 			
-		//TODO add filter and enrichement steps
+		//TODO Exercise 2 add filter and enrichement steps
 				
 		List<HttpHost> httpHosts = new ArrayList<>();
 		httpHosts.add(new HttpHost(this.appConfig.getElasticConf().getHost(), this.appConfig.getElasticConf().getPort(), "http"));
 		
-		// use a ElasticsearchSink.Builder to create an ElasticsearchSink
-		ElasticsearchSink.Builder<GenericRecord> esSinkBuilder = new ElasticsearchSink.Builder<>(
-		    httpHosts,
-		    new StockElasticSink(this.appConfig.getElasticConf()));
+		//TODO Exercise 3 use a ElasticsearchSink.Builder an use ElasticSink and replace FlinkKafkaproducer Sink
 		
-		// configuration for the bulk requests; this instructs the sink to emit after every element, otherwise they would be buffered
-		esSinkBuilder.setBulkFlushMaxActions(1);
-
-			
+		//TODO Exercise 3 configure bulk requests; this instructs the sink to emit after every element, otherwise they would be buffered
+					
 		quotesEnriched.addSink(new FlinkKafkaProducer010<>("quotesTransformed", serde, jobProperties));
 	}
 	

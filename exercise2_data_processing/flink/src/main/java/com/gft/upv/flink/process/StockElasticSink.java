@@ -23,20 +23,16 @@ public class StockElasticSink implements ElasticsearchSinkFunction<GenericRecord
 	}
 	
 	public IndexRequest createIndexRequest(GenericRecord element) {
-        //Map<String, String> json = new HashMap<>();
-        //json.put("data", element.toString());
-    
-		//JSONParser parser = new JSONParser(null, null, false); 
-		//JSONObject json = (JSONObject) parser.parse(element.toString());
+   
 		
 		Map<String, Object> map = new HashMap<>();
-		element.getSchema().getFields().forEach(field -> 
-		    map.put(field.name(), element.get(field.name())));
 		
-		return Requests.indexRequest()
-                .index(config.getStockIndex())
-                .type(config.getStockType())
-                .source(element.toString(),XContentType.JSON);
+		//TODO Exercise 3 fill Map with element values
+		//take a look  to flink documentation https://ci.apache.org/projects/flink/flink-docs-stable/dev/connectors/elasticsearch.html
+		
+		
+		//TODO create a index Request
+		
 	}
 	
 	
