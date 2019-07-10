@@ -20,7 +20,7 @@ In this exercise you will understand the software requirements, and how to do an
 * Kafka tool & Avro plugin: http://www.kafkatool.com/ , https://github.com/laymain/kafka-tool-avro
 * Elastic: https://www.elastic.co/es/downloads/elasticsearch
 * Kibana: https://www.elastic.co/es/downloads/kibana
-* Jupyter: https://jupyter.org/
+* Jupyter: https://www.anaconda.com/distribution/
 
 ## Initial Setup
 
