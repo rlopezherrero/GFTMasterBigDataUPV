@@ -2,7 +2,7 @@
 
 In this exercise you will connect Nifi ingestion with Flink data processing
 
-![Exercise architecture](img/architecture_exercise2.png)
+![Exercise architecture](../img/architecture_exercise2.png)
 
 ## Setup
 
