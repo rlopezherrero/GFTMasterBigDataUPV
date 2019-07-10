@@ -40,6 +40,6 @@ confluent-5.2.2\bin\windows\schema-registry-start.bat etc\schema-registry\schema
 * Flink processing	
 	* Configure companies filter on src/main/java/com/gft/upv/flink/proccess/FilterCompanies.java. You can  get in-scope companies from appConfig.getInScopeCompanies()
 	* Configure enrichment on src/main/java/com/gft/upv/flink/proccess/EnrichCompany.java
-	* Add those  two steps on src/main/java/com/gft/upv/flink/proccess/StreaminStockJob.java
+	* Add those  two steps on src/main/java/com/gft/upv/flink/StreaminStockJob.java
 * Kafa tool for Output Visualization
 	* Connect  to quotesEnriched topic and see output messages. 

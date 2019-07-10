@@ -25,4 +25,7 @@ bin\kibana
 
 ## Development
 
+* Evolve the code used on exercise 2. 
+* Add sink process to the pipeline on src/main/java/com/gft/upv/flink/StreaminStockJob.java
+* Implement document storage on src/main/java/com/gft/upv/flink/proccess/StockElasticSink.java
 
