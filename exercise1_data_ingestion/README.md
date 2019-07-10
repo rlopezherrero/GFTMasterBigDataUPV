@@ -31,11 +31,13 @@ Once it is running, go to http://localhost:8080/nifi
 
 In the NiFi canvas, you will need to create the following:
 
-* Read from Twitter (GetTwitter processor) and save to file (PutFile processor)
+* Read from Twitter (**GetTwitter** processor) and save to file (**PutFile** processor)
   * You will need the credentials from your Twitter app
-* Read from IEX Cloud REST Service (InvokeHTTP processor) and save to file (PutFile processor)
+  * Link both
+* Read from IEX Cloud REST Service (**InvokeHTTP** processor) and save to file (**PutFile** processor)
   * You will need the tickers REST URL
   * Set the scheduler to every 30 seconds
+  * Link both
 
 For more info on how the processors work, read the [Apache NiFi documentation](https://nifi.apache.org/docs.html).
 
