@@ -1,4 +1,4 @@
-# Exercise 1: Data Ingestion
+# Exercise 2: Data Processing
 
 In this exercise you will connect Nifi ingestion with Flink data processing
 
@@ -33,8 +33,11 @@ confluent-5.2.2\bin\windows\schema-registry-start.bat etc\schema-registry\schema
 
 ## Development
 
-* Configure companies filter on src/main/java/com/gft/upv/flink/proccess/FilterCompanies.java
-You can  get in-scope companies from appConfig.getInScopeCompanies()
-* Configure enrichment on src/main/java/com/gft/upv/flink/proccess/EnrichCompany.java
-* Add those  two steps on src/main/java/com/gft/upv/flink/proccess/StreaminStockJob.java
-
+* Nifi
+	* Replace File sink box and with Kafka publisher box,  topics to  be used are quotes and  twitter.
+* Flink processing	
+	* Configure companies filter on src/main/java/com/gft/upv/flink/proccess/FilterCompanies.java. You can  get in-scope companies from appConfig.getInScopeCompanies()
+	* Configure enrichment on src/main/java/com/gft/upv/flink/proccess/EnrichCompany.java
+	* Add those  two steps on src/main/java/com/gft/upv/flink/proccess/StreaminStockJob.java
+* Kafa tool for Output Visualization
+	* Connect  to quotesEnriched topic and see output messages. 
