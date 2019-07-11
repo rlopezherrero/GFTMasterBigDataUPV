@@ -1,0 +1,88 @@
+INFO |2019-03-18 17:48:08|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-18 17:49:39|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-18 17:54:02|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-18 17:58:42|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-18 18:03:31|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-18 18:05:30|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-20 09:31:52|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-20 09:33:14|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 11:31:12|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 11:39:26|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 15:54:03|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 15:56:27|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 15:57:41|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 15:58:29|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 15:59:47|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:02:03|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:04:06|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:04:57|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:06:06|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:07:35|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:10:50|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:11:39|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:13:35|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:15:49|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:21:35|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:22:13|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:23:16|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:25:57|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:28:49|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:29:12|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:32:14|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:32:41|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:37:04|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:41:14|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 16:43:12|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 18:27:20|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-25 18:28:23|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-26 10:12:24|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-26 11:30:16|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-26 11:31:30|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-26 13:17:42|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-26 13:19:23|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-26 13:20:42|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}
+INFO |2019-03-26 13:22:04|[main] producer.MICProperties (MICProperties.java:21) - gft.com.datalake.catalog.kafka.producer.KafkaTopicsApplication configuration is
+:{kafka.registry.port=8084, kafka.port=9092, kafka.registry.host=localhost, kafka.host=localhost}

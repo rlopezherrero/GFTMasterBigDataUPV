@@ -26,9 +26,9 @@ import io.confluent.kafka.serializers.KafkaAvroDeserializerConfig;
 
 
 /**
- * Skeleton for a Flink Streaming Job.
+ * Skeleton for GFT UPV Big Data Master
  *
- * <p>For a tutorial how to write a Flink streaming application, check the
+ * <p>Follow TODOs for the exercise development, check the
  * tutorials and examples on the <a href="http://flink.apache.org/docs/stable/">Flink Website</a>.
  *
  * <p>To package your application into a JAR file for execution, run
@@ -37,6 +37,7 @@ import io.confluent.kafka.serializers.KafkaAvroDeserializerConfig;
  * <p>If you change the name of the main class (with the public static void main(String[] args))
  * method, change the respective entry in the POM.xml file (simply search for 'mainClass').
  */
+
 public class StreamingStockJob {
 
 	private String topic;
