@@ -15,4 +15,4 @@ Follow the links below to access each exercise's details, code, etc.
 * [Exercise 2: Data Processing](exercise2_data_processing)
 * [Exercise 3: Data Storage](exercise3_data_storage)
 * [Exercise 4: Data Visualization](exercise4_data_visualization)
-* [Exercise 5: Machine Learning](exercise5_machine_learning)
+* [Exercise 5: Machine Learning](exercise5_machine_learning) 
