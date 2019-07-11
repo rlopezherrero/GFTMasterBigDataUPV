@@ -1,4 +1,4 @@
-# Exercise 3: Data Storage
+# Exercise 3: Data Visualization
 
 In this exercise you will visualize stored data and create a dashboard
 

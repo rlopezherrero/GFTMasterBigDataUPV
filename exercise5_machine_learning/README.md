@@ -1,4 +1,4 @@
-# Exercise 3: Data Storage
+# Exercise 5: Machine Learning
 
 In this exercise you will explore the data and build a simple classifier. 
 
