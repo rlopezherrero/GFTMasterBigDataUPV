@@ -18,7 +18,7 @@ public class FilterCompanies implements FilterFunction<GenericRecord> {
 
 	@Override
 	public boolean filter(GenericRecord value) throws Exception {
-		// TODO Filter elements checking symbol field
+		// TODO Exercise 2 Filter elements checking symbol field
 		// Hint, value is on Utf8
 		
 		return true;

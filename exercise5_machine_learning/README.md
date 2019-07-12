@@ -9,6 +9,8 @@ In this exercise you will explore the data and build a simple classifier.
 * Download Anaconda that contains Jupyter Notebook:
 
 	* https://www.anaconda.com/distribution/
+	* Check if you have pip installed
+	* Install scikit & Elastic client (to check) (pip install elasticsearch)
 
 * Install it
 

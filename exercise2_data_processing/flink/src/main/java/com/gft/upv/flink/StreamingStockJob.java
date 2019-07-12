@@ -62,12 +62,9 @@ public class StreamingStockJob {
 				
 		//Setup job properties
 		jobProperties.put("bootstrap.servers", appConfig.getKafkaConf().getKafkaBrokersUrls());
-		// only required for Kafka 0.8
 		jobProperties.put("zookeeper.connect", appConfig.getKafkaConf().getZkUrl());
 		jobProperties.setProperty("group.id", "stockConsumer");
 		jobProperties.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
-		//properties.put("value.serializer", "org.apache.kafka.common.serialization.ByteArraySerializer");
-		//props.put("key.serializer", "io.confluent.kafka.serializers.KafkaAvroSerializer");
 		jobProperties.put("value.deserializer", "io.confluent.kafka.serializers.KafkaAvroDeserializer");
 		jobProperties.put("schema.registry.url", appConfig.getKafkaConf().getSchemaRegistryUrl());
 		jobProperties.put(KafkaAvroDeserializerConfig.SPECIFIC_AVRO_READER_CONFIG, "true");

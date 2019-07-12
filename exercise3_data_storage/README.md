@@ -31,12 +31,12 @@ bin\kibana
 * Access to  Kibana (localhost:5661)
 * Go to Management-->Index Management. You will see your quotes index created. 
 * Go to Dev Tools and execute following query and  you will get quotes indexed :
-````
+```
 GET quotes/_search
 {
   "size": 10 
   
 }
-``
+```
 
 In case you need help, you can check ElasticSink API here --> https://ci.apache.org/projects/flink/flink-docs-stable/dev/connectors/elasticsearch.html

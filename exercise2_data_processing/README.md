@@ -33,6 +33,15 @@ confluent-5.2.2\bin\windows\kafka-server-start.bat etc\kafka\server.properties
 confluent-5.2.2\bin\windows\schema-registry-start.bat etc\schema-registry\schema-registry.properties
 ```
 
+* Register Quotes and Twitter schema on schema registry
+	* Download curl --> https://curl.haxx.se/windows/dl-7.65.1_3/curl-7.65.1_3-win64-mingw.zip
+	* Register both schemas, please be inside exercise2_data_processing folder:
+	```
+	curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" --data @quotesSchema.json http://localhost:8081/subjects/quotes-value/versions
+	curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" --data @twitterSchema.json http://localhost:8081/subjects/quotes-value/versions
+	```
+
+
 ## Development
 
 * Nifi
