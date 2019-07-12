@@ -38,7 +38,7 @@ confluent-5.2.2\bin\windows\schema-registry-start.bat etc\schema-registry\schema
 	* Register both schemas, please be inside exercise2_data_processing folder:
 	```
 	curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" --data @quotesSchema.json http://localhost:8081/subjects/quotes-value/versions
-	curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" --data @twitterSchema.json http://localhost:8081/subjects/quotes-value/versions
+	curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" --data @twitterSchema.json http://localhost:8081/subjects/twitter-value/versions
 	```
 
 
