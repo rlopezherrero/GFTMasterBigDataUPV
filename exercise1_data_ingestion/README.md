@@ -15,7 +15,7 @@ In this exercise you will connect to your data sources and store the data into a
 
 ## Setup
 
-Download Apache Nifi:
+Download Apache NiFi binaries (e.g. **nifi-1.9.2-bin.zip**):
 
 * https://nifi.apache.org/download.html
 
@@ -41,4 +41,4 @@ In the NiFi canvas, you will need to create the following:
 
 For more info on how the processors work, read the [Apache NiFi documentation](https://nifi.apache.org/docs.html).
 
-**IMPORTANT**: In case you get stuck, feel free to use the templates in the "src" folder.
+**IMPORTANT**: In case you get stuck, feel free to use the templates in the "nifi" folder.
