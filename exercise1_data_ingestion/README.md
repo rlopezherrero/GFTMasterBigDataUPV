@@ -12,6 +12,7 @@ In this exercise you will connect to your data sources and store the data into a
     * More on this call: https://iexcloud.io/docs/api/#collections
     * It will return a collection of quotes: https://iexcloud.io/docs/api/#quote
   * In the "API Tokens", use the "PUBLISHABLE" token
+
 * **Twitter**: https://developer.twitter.com/
   * Sign up
   * Create app
@@ -37,6 +38,7 @@ In the NiFi canvas, you will need to create the following:
 * Read from Twitter (**GetTwitter** processor) and save to file (**PutFile** processor)
   * You will need the credentials from your Twitter app
   * Link both processors (using the "success" output)
+
 * Read from IEX Cloud REST Service (**InvokeHTTP** processor) and save to file (**PutFile** processor)
   * You will need the tickers REST URL (see "Data Sources", adding your own token)
   * Set the scheduler to every 30 seconds

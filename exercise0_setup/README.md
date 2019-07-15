@@ -22,13 +22,17 @@ In this exercise you will understand the software requirements, and how to do an
 * Kibana: https://www.elastic.co/es/downloads/kibana
 * Jupyter: https://www.anaconda.com/distribution/
 
+**NOTE**: The architecture software will be installed when required in each of the exercises. There is no need to download or install them yet.
+
 ## Initial Setup
 
 * Install IDE
 * Download and unzip Maven
 * Download the code with any of these two options:
+
   1. Install GIT and clone the project
   ```
   git clone https://github.com/rlopezherrero/GFTMasterBigDataUPV
   ```
+
   2. Clone the course exercise repository: https://github.com/rlopezherrero/GFTMasterBigDataUPV (click on "Clone or download")
