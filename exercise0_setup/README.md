@@ -26,7 +26,7 @@ In this exercise you will understand the software requirements, and how to do an
 
 * Install IDE
 * Download and unzip Maven
-* Download the code with any of these two otions:
+* Download the code with any of these two options:
   1. Install GIT and clone the project
   ```
   git clone https://github.com/rlopezherrero/GFTMasterBigDataUPV
