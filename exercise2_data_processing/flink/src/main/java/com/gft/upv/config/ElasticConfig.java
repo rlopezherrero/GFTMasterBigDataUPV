@@ -14,6 +14,9 @@ public class ElasticConfig implements Serializable {
 	private final String stockIndex;
 	private final String stockType;
 	
+	private final String twitterIndex;
+	private final String twitterType;
+	
     public ElasticConfig(Config confFile) {
     	
     	host = confFile.getString("elastic.elasticHost");
@@ -21,6 +24,9 @@ public class ElasticConfig implements Serializable {
     	
     	stockIndex = confFile.getString("elastic.stockIndex");
     	stockType = confFile.getString("elastic.stockType");
+    	
+    	twitterIndex = confFile.getString("elastic.twitterIndex");
+    	twitterType = confFile.getString("elastic.twitterType");
      }
 
 	public String getHost() {
@@ -37,6 +43,14 @@ public class ElasticConfig implements Serializable {
 
 	public String getStockType() {
 		return stockType;
+	}
+
+	public String getTwitterIndex() {
+		return twitterIndex;
+	}
+
+	public String getTwitterType() {
+		return twitterType;
 	}
 
     

@@ -18,19 +18,19 @@ Unzip and launch it:
 
 * Zookeeper :
 ```
-confluent-5.2.2\bin\windows\zookeeper-server-start.bat  etc\kafka\zookeeper.properties
+confluent-5.2.2\bin\windows\zookeeper-server-start.bat  confluent-5.2.2\etc\kafka\zookeeper.properties
 ```
 
 * Kafka broker:
 ```
-confluent-5.2.2\bin\windows\kafka-server-start.bat etc\kafka\server.properties
+confluent-5.2.2\bin\windows\kafka-server-start.bat confluent-5.2.2\etc\kafka\server.properties
 ```
 
 * Schema registry:
 	* Copy schema-registry.bat & schema-registry-run-class.bat to confluent-5.2.2\bin\windows
 	* Launch it (If it fails change default port 8081 on etc/schema-registry.properties)
 ```
-confluent-5.2.2\bin\windows\schema-registry-start.bat etc\schema-registry\schema-registry.properties
+confluent-5.2.2\bin\windows\schema-registry-start.bat confluent-5.2.2\etc\schema-registry\schema-registry.properties
 ```
 
 * Register Quotes and Twitter schema on schema registry
@@ -38,7 +38,7 @@ confluent-5.2.2\bin\windows\schema-registry-start.bat etc\schema-registry\schema
 	* Register both schemas, please be inside exercise2_data_processing folder:
 	```
 	curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" --data @quotesSchema.json http://localhost:8081/subjects/quotes-value/versions
-	curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" --data @twitterSchema.json http://localhost:8081/subjects/twitter-value/versions
+	curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" --data @tweetsSchema.json http://localhost:8081/subjects/tweets-value/versions
 	```
 
 

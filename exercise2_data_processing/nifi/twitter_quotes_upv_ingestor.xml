@@ -2,70 +2,16 @@
 <template encoding-version="1.2">
     <description></description>
     <groupId>e163aed1-016b-1000-9bdf-9a343c6828f4</groupId>
-    <name>twitter_quotes_upv_ingestor.xml</name>
+    <name>twitter_quotes_upv_ingestor2</name>
     <snippet>
         <connections>
-            <id>136a65f5-2775-365a-0000-000000000000</id>
-            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <bends>
-                <x>636.6929626464844</x>
-                <y>331.37025451660156</y>
-            </bends>
-            <destination>
-                <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
-                <id>f3cfa6b9-e566-3a4c-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>1</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>Response</selectedRelationships>
-            <source>
-                <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
-                <id>f2fb19d1-a930-3d17-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
-        <connections>
-            <id>21a8ed67-28ee-33ba-0000-000000000000</id>
+            <id>270346b0-68f6-3e47-0000-000000000000</id>
             <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
             <backPressureObjectThreshold>10000</backPressureObjectThreshold>
             <destination>
                 <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
-                <id>952235fa-47ef-3974-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>1</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>success</selectedRelationships>
-            <source>
-                <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
-                <id>23212965-61ff-39f4-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
-        <connections>
-            <id>4df748a4-acdf-3685-0000-000000000000</id>
-            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <destination>
-                <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
-                <id>c0617ab8-33e7-3cf2-0000-000000000000</id>
+                <id>2b74d2f3-7d65-3b4e-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </destination>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -78,44 +24,19 @@
             <selectedRelationships>tweet</selectedRelationships>
             <source>
                 <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
-                <id>50161d2f-f8dc-36d2-0000-000000000000</id>
+                <id>bd1ee00c-7ce9-3e5d-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </source>
             <zIndex>0</zIndex>
         </connections>
         <connections>
-            <id>68411100-f9a1-35d3-0000-000000000000</id>
+            <id>74c84211-1514-3652-0000-000000000000</id>
             <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
             <backPressureObjectThreshold>10000</backPressureObjectThreshold>
             <destination>
                 <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
-                <id>23212965-61ff-39f4-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>1</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>split</selectedRelationships>
-            <source>
-                <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
-                <id>f3cfa6b9-e566-3a4c-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
-        <connections>
-            <id>851e5129-0e61-3567-0000-000000000000</id>
-            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <destination>
-                <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
-                <id>e040cbf6-a700-3643-0000-000000000000</id>
+                <id>00bfd995-cbe0-3b54-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </destination>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -128,19 +49,73 @@
             <selectedRelationships>success</selectedRelationships>
             <source>
                 <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
-                <id>77296431-344e-3bdd-0000-000000000000</id>
+                <id>2b74d2f3-7d65-3b4e-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </source>
             <zIndex>0</zIndex>
         </connections>
         <connections>
-            <id>dd9792d5-c4c7-3ccc-0000-000000000000</id>
+            <id>7fa8f1d1-538b-331b-0000-000000000000</id>
+            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <bends>
+                <x>636.6929626464844</x>
+                <y>354.8320309684516</y>
+            </bends>
+            <destination>
+                <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
+                <id>0b9af17f-69a6-3142-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>Response</selectedRelationships>
+            <source>
+                <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
+                <id>88202f5c-1f01-3641-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>8808225a-c02f-3b7c-0000-000000000000</id>
             <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
             <backPressureObjectThreshold>10000</backPressureObjectThreshold>
             <destination>
                 <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
-                <id>50161d2f-f8dc-36d2-0000-000000000000</id>
+                <id>a7479531-ff81-3f39-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>split</selectedRelationships>
+            <source>
+                <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
+                <id>0b9af17f-69a6-3142-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>9758179d-d811-3a14-0000-000000000000</id>
+            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
+                <id>bd1ee00c-7ce9-3e5d-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </destination>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -153,7 +128,57 @@
             <selectedRelationships>matched</selectedRelationships>
             <source>
                 <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
-                <id>e040cbf6-a700-3643-0000-000000000000</id>
+                <id>e3febb64-9cc5-35c3-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>a7f1e8f6-f8ba-3800-0000-000000000000</id>
+            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
+                <id>58f6e99c-ba81-3d90-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
+                <id>a7479531-ff81-3f39-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>f455151c-b87b-35e9-0000-000000000000</id>
+            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
+                <id>e3febb64-9cc5-35c3-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>7cffa529-3e6b-37ca-0000-000000000000</groupId>
+                <id>2d6840bf-899f-376b-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </source>
             <zIndex>0</zIndex>
@@ -212,12 +237,15 @@
                 </entry>
                 <entry>
                     <key>timeout</key>
+                    <value>30 secs</value>
                 </entry>
                 <entry>
                     <key>cache-size</key>
+                    <value>1000</value>
                 </entry>
                 <entry>
                     <key>cache-expiration</key>
+                    <value>1 hour</value>
                 </entry>
             </properties>
             <state>ENABLED</state>
@@ -322,6 +350,7 @@
                 </entry>
                 <entry>
                     <key>schema-name</key>
+                    <value>${schema.name}</value>
                 </entry>
                 <entry>
                     <key>schema-version</key>
@@ -331,15 +360,19 @@
                 </entry>
                 <entry>
                     <key>schema-text</key>
+                    <value>${avro.schema}</value>
                 </entry>
                 <entry>
                     <key>compression-format</key>
+                    <value>NONE</value>
                 </entry>
                 <entry>
                     <key>cache-size</key>
+                    <value>1000</value>
                 </entry>
                 <entry>
                     <key>encoder-pool-size</key>
+                    <value>32</value>
                 </entry>
             </properties>
             <state>ENABLED</state>
@@ -423,6 +456,7 @@
             <properties>
                 <entry>
                     <key>schema-access-strategy</key>
+                    <value>infer-schema</value>
                 </entry>
                 <entry>
                     <key>schema-registry</key>
@@ -430,6 +464,7 @@
                 </entry>
                 <entry>
                     <key>schema-name</key>
+                    <value>${schema.name}</value>
                 </entry>
                 <entry>
                     <key>schema-version</key>
@@ -439,6 +474,7 @@
                 </entry>
                 <entry>
                     <key>schema-text</key>
+                    <value>${avro.schema}</value>
                 </entry>
                 <entry>
                     <key>schema-inference-cache</key>
@@ -457,280 +493,11 @@
             <type>org.apache.nifi.json.JsonTreeReader</type>
         </controllerServices>
         <processors>
-            <id>23212965-61ff-39f4-0000-000000000000</id>
+            <id>00bfd995-cbe0-3b54-0000-000000000000</id>
             <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
             <position>
-                <x>1073.2219115747412</x>
-                <y>758.7740633919</y>
-            </position>
-            <bundle>
-                <artifact>nifi-update-attribute-nar</artifact>
-                <group>org.apache.nifi</group>
-                <version>1.9.2</version>
-            </bundle>
-            <config>
-                <bulletinLevel>WARN</bulletinLevel>
-                <comments></comments>
-                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
-                <descriptors>
-                    <entry>
-                        <key>Delete Attributes Expression</key>
-                        <value>
-                            <name>Delete Attributes Expression</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Store State</key>
-                        <value>
-                            <name>Store State</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Stateful Variables Initial Value</key>
-                        <value>
-                            <name>Stateful Variables Initial Value</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>canonical-value-lookup-cache-size</key>
-                        <value>
-                            <name>canonical-value-lookup-cache-size</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>schema.name</key>
-                        <value>
-                            <name>schema.name</name>
-                        </value>
-                    </entry>
-                </descriptors>
-                <executionNode>ALL</executionNode>
-                <lossTolerant>false</lossTolerant>
-                <penaltyDuration>30 sec</penaltyDuration>
-                <properties>
-                    <entry>
-                        <key>Delete Attributes Expression</key>
-                    </entry>
-                    <entry>
-                        <key>Store State</key>
-                        <value>Do not store state</value>
-                    </entry>
-                    <entry>
-                        <key>Stateful Variables Initial Value</key>
-                    </entry>
-                    <entry>
-                        <key>canonical-value-lookup-cache-size</key>
-                        <value>100</value>
-                    </entry>
-                    <entry>
-                        <key>schema.name</key>
-                        <value>quotes-value</value>
-                    </entry>
-                </properties>
-                <runDurationMillis>0</runDurationMillis>
-                <schedulingPeriod>0 sec</schedulingPeriod>
-                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-                <yieldDuration>1 sec</yieldDuration>
-            </config>
-            <executionNodeRestricted>false</executionNodeRestricted>
-            <name>UpdateAttribute</name>
-            <relationships>
-                <autoTerminate>false</autoTerminate>
-                <name>success</name>
-            </relationships>
-            <state>STOPPED</state>
-            <style/>
-            <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
-        </processors>
-        <processors>
-            <id>50161d2f-f8dc-36d2-0000-000000000000</id>
-            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
-            <position>
-                <x>1233.6903991699219</x>
-                <y>0.0</y>
-            </position>
-            <bundle>
-                <artifact>nifi-standard-nar</artifact>
-                <group>org.apache.nifi</group>
-                <version>1.9.2</version>
-            </bundle>
-            <config>
-                <bulletinLevel>WARN</bulletinLevel>
-                <comments></comments>
-                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
-                <descriptors>
-                    <entry>
-                        <key>Routing Strategy</key>
-                        <value>
-                            <name>Routing Strategy</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>tweet</key>
-                        <value>
-                            <name>tweet</name>
-                        </value>
-                    </entry>
-                </descriptors>
-                <executionNode>ALL</executionNode>
-                <lossTolerant>false</lossTolerant>
-                <penaltyDuration>30 sec</penaltyDuration>
-                <properties>
-                    <entry>
-                        <key>Routing Strategy</key>
-                        <value>Route to Property name</value>
-                    </entry>
-                    <entry>
-                        <key>tweet</key>
-                        <value>${twitter.text:toLower():contains("google"):and(${twitter.lang:equals("en")})}</value>
-                    </entry>
-                </properties>
-                <runDurationMillis>0</runDurationMillis>
-                <schedulingPeriod>0 sec</schedulingPeriod>
-                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-                <yieldDuration>1 sec</yieldDuration>
-            </config>
-            <executionNodeRestricted>false</executionNodeRestricted>
-            <name>RouteOnAttribute</name>
-            <relationships>
-                <autoTerminate>false</autoTerminate>
-                <name>tweet</name>
-            </relationships>
-            <relationships>
-                <autoTerminate>true</autoTerminate>
-                <name>unmatched</name>
-            </relationships>
-            <state>STOPPED</state>
-            <style/>
-            <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
-        </processors>
-        <processors>
-            <id>77296431-344e-3bdd-0000-000000000000</id>
-            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
-            <position>
-                <x>4.547821044921875</x>
-                <y>11.526992797851562</y>
-            </position>
-            <bundle>
-                <artifact>nifi-social-media-nar</artifact>
-                <group>org.apache.nifi</group>
-                <version>1.9.2</version>
-            </bundle>
-            <config>
-                <bulletinLevel>WARN</bulletinLevel>
-                <comments></comments>
-                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
-                <descriptors>
-                    <entry>
-                        <key>Twitter Endpoint</key>
-                        <value>
-                            <name>Twitter Endpoint</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Consumer Key</key>
-                        <value>
-                            <name>Consumer Key</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Consumer Secret</key>
-                        <value>
-                            <name>Consumer Secret</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Access Token</key>
-                        <value>
-                            <name>Access Token</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Access Token Secret</key>
-                        <value>
-                            <name>Access Token Secret</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Languages</key>
-                        <value>
-                            <name>Languages</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Terms to Filter On</key>
-                        <value>
-                            <name>Terms to Filter On</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>IDs to Follow</key>
-                        <value>
-                            <name>IDs to Follow</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Locations to Filter On</key>
-                        <value>
-                            <name>Locations to Filter On</name>
-                        </value>
-                    </entry>
-                </descriptors>
-                <executionNode>ALL</executionNode>
-                <lossTolerant>false</lossTolerant>
-                <penaltyDuration>30 sec</penaltyDuration>
-                <properties>
-                    <entry>
-                        <key>Twitter Endpoint</key>
-                        <value>Filter Endpoint</value>
-                    </entry>
-                    <entry>
-                        <key>Consumer Key</key>
-                    </entry>
-                    <entry>
-                        <key>Consumer Secret</key>
-                    </entry>
-                    <entry>
-                        <key>Access Token</key>
-                    </entry>
-                    <entry>
-                        <key>Access Token Secret</key>
-                    </entry>
-                    <entry>
-                        <key>Languages</key>
-                    </entry>
-                    <entry>
-                        <key>Terms to Filter On</key>
-                        <value>google</value>
-                    </entry>
-                    <entry>
-                        <key>IDs to Follow</key>
-                    </entry>
-                    <entry>
-                        <key>Locations to Filter On</key>
-                    </entry>
-                </properties>
-                <runDurationMillis>0</runDurationMillis>
-                <schedulingPeriod>0 sec</schedulingPeriod>
-                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-                <yieldDuration>1 sec</yieldDuration>
-            </config>
-            <executionNodeRestricted>false</executionNodeRestricted>
-            <name>GetTwitter</name>
-            <relationships>
-                <autoTerminate>false</autoTerminate>
-                <name>success</name>
-            </relationships>
-            <state>STOPPED</state>
-            <style/>
-            <type>org.apache.nifi.processors.twitter.GetTwitter</type>
-        </processors>
-        <processors>
-            <id>952235fa-47ef-3974-0000-000000000000</id>
-            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
-            <position>
-                <x>1495.4645006006954</x>
-                <y>473.760328177912</y>
+                <x>2261.7740709131954</x>
+                <y>225.60320814538704</y>
             </position>
             <bundle>
                 <artifact>nifi-kafka-2-0-nar</artifact>
@@ -877,7 +644,7 @@
                     </entry>
                     <entry>
                         <key>topic</key>
-                        <value>quotes</value>
+                        <value>tweets</value>
                     </entry>
                     <entry>
                         <key>record-reader</key>
@@ -965,11 +732,284 @@
             <type>org.apache.nifi.processors.kafka.pubsub.PublishKafkaRecord_2_0</type>
         </processors>
         <processors>
-            <id>c0617ab8-33e7-3cf2-0000-000000000000</id>
+            <id>0b9af17f-69a6-3142-0000-000000000000</id>
             <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
             <position>
-                <x>1809.9649200439453</x>
-                <y>7.207603454589844</y>
+                <x>635.1539694696858</x>
+                <y>280.0292890100666</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>JsonPath Expression</key>
+                        <value>
+                            <name>JsonPath Expression</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>
+                            <name>Null Value Representation</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>JsonPath Expression</key>
+                        <value>$[*]</value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>empty string</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>SplitJson</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>original</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>split</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.SplitJson</type>
+        </processors>
+        <processors>
+            <id>2b74d2f3-7d65-3b4e-0000-000000000000</id>
+            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
+            <position>
+                <x>1934.8110229028662</x>
+                <y>0.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-update-attribute-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Delete Attributes Expression</key>
+                        <value>
+                            <name>Delete Attributes Expression</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Store State</key>
+                        <value>
+                            <name>Store State</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Stateful Variables Initial Value</key>
+                        <value>
+                            <name>Stateful Variables Initial Value</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>canonical-value-lookup-cache-size</key>
+                        <value>
+                            <name>canonical-value-lookup-cache-size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>schema.name</key>
+                        <value>
+                            <name>schema.name</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Delete Attributes Expression</key>
+                    </entry>
+                    <entry>
+                        <key>Store State</key>
+                        <value>Do not store state</value>
+                    </entry>
+                    <entry>
+                        <key>Stateful Variables Initial Value</key>
+                    </entry>
+                    <entry>
+                        <key>canonical-value-lookup-cache-size</key>
+                        <value>100</value>
+                    </entry>
+                    <entry>
+                        <key>schema.name</key>
+                        <value>tweets-value</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>UpdateAttribute</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+        </processors>
+        <processors>
+            <id>2d6840bf-899f-376b-0000-000000000000</id>
+            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
+            <position>
+                <x>4.547821044921875</x>
+                <y>34.98876924970159</y>
+            </position>
+            <bundle>
+                <artifact>nifi-social-media-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Twitter Endpoint</key>
+                        <value>
+                            <name>Twitter Endpoint</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Consumer Key</key>
+                        <value>
+                            <name>Consumer Key</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Consumer Secret</key>
+                        <value>
+                            <name>Consumer Secret</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Access Token</key>
+                        <value>
+                            <name>Access Token</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Access Token Secret</key>
+                        <value>
+                            <name>Access Token Secret</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Languages</key>
+                        <value>
+                            <name>Languages</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Terms to Filter On</key>
+                        <value>
+                            <name>Terms to Filter On</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>IDs to Follow</key>
+                        <value>
+                            <name>IDs to Follow</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Locations to Filter On</key>
+                        <value>
+                            <name>Locations to Filter On</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Twitter Endpoint</key>
+                        <value>Filter Endpoint</value>
+                    </entry>
+                    <entry>
+                        <key>Consumer Key</key>
+                    </entry>
+                    <entry>
+                        <key>Consumer Secret</key>
+                    </entry>
+                    <entry>
+                        <key>Access Token</key>
+                    </entry>
+                    <entry>
+                        <key>Access Token Secret</key>
+                    </entry>
+                    <entry>
+                        <key>Languages</key>
+                    </entry>
+                    <entry>
+                        <key>Terms to Filter On</key>
+                        <value>google</value>
+                    </entry>
+                    <entry>
+                        <key>IDs to Follow</key>
+                    </entry>
+                    <entry>
+                        <key>Locations to Filter On</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>GetTwitter</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.twitter.GetTwitter</type>
+        </processors>
+        <processors>
+            <id>58f6e99c-ba81-3d90-0000-000000000000</id>
+            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
+            <position>
+                <x>1691.0631334131954</x>
+                <y>309.66167982507454</y>
             </position>
             <bundle>
                 <artifact>nifi-kafka-2-0-nar</artifact>
@@ -988,15 +1028,53 @@
                         </value>
                     </entry>
                     <entry>
-                        <key>security.protocol</key>
+                        <key>topic</key>
                         <value>
-                            <name>security.protocol</name>
+                            <name>topic</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>sasl.kerberos.service.name</key>
+                        <key>record-reader</key>
                         <value>
-                            <name>sasl.kerberos.service.name</name>
+                            <identifiesControllerService>org.apache.nifi.serialization.RecordReaderFactory</identifiesControllerService>
+                            <name>record-reader</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>record-writer</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.serialization.RecordSetWriterFactory</identifiesControllerService>
+                            <name>record-writer</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>use-transactions</key>
+                        <value>
+                            <name>use-transactions</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>acks</key>
+                        <value>
+                            <name>acks</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>attribute-name-regex</key>
+                        <value>
+                            <name>attribute-name-regex</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>message-header-encoding</key>
+                        <value>
+                            <name>message-header-encoding</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>security.protocol</key>
+                        <value>
+                            <name>security.protocol</name>
                         </value>
                     </entry>
                     <entry>
@@ -1004,6 +1082,12 @@
                         <value>
                             <identifiesControllerService>org.apache.nifi.kerberos.KerberosCredentialsService</identifiesControllerService>
                             <name>kerberos-credentials-service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>sasl.kerberos.service.name</key>
+                        <value>
+                            <name>sasl.kerberos.service.name</name>
                         </value>
                     </entry>
                     <entry>
@@ -1026,51 +1110,9 @@
                         </value>
                     </entry>
                     <entry>
-                        <key>topic</key>
+                        <key>message-key-field</key>
                         <value>
-                            <name>topic</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>acks</key>
-                        <value>
-                            <name>acks</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>use-transactions</key>
-                        <value>
-                            <name>use-transactions</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>attribute-name-regex</key>
-                        <value>
-                            <name>attribute-name-regex</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>message-header-encoding</key>
-                        <value>
-                            <name>message-header-encoding</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>kafka-key</key>
-                        <value>
-                            <name>kafka-key</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>key-attribute-encoding</key>
-                        <value>
-                            <name>key-attribute-encoding</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>message-demarcator</key>
-                        <value>
-                            <name>message-demarcator</name>
+                            <name>message-key-field</name>
                         </value>
                     </entry>
                     <entry>
@@ -1113,14 +1155,41 @@
                         <value>localhost:9092</value>
                     </entry>
                     <entry>
+                        <key>topic</key>
+                        <value>quotes3</value>
+                    </entry>
+                    <entry>
+                        <key>record-reader</key>
+                        <value>e7621e84-22d1-3279-0000-000000000000</value>
+                    </entry>
+                    <entry>
+                        <key>record-writer</key>
+                        <value>85f73990-a838-3953-0000-000000000000</value>
+                    </entry>
+                    <entry>
+                        <key>use-transactions</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>acks</key>
+                        <value>0</value>
+                    </entry>
+                    <entry>
+                        <key>attribute-name-regex</key>
+                    </entry>
+                    <entry>
+                        <key>message-header-encoding</key>
+                        <value>UTF-8</value>
+                    </entry>
+                    <entry>
                         <key>security.protocol</key>
                         <value>PLAINTEXT</value>
                     </entry>
                     <entry>
-                        <key>sasl.kerberos.service.name</key>
+                        <key>kerberos-credentials-service</key>
                     </entry>
                     <entry>
-                        <key>kerberos-credentials-service</key>
+                        <key>sasl.kerberos.service.name</key>
                     </entry>
                     <entry>
                         <key>sasl.kerberos.principal</key>
@@ -1132,33 +1201,7 @@
                         <key>ssl.context.service</key>
                     </entry>
                     <entry>
-                        <key>topic</key>
-                        <value>tweets</value>
-                    </entry>
-                    <entry>
-                        <key>acks</key>
-                        <value>0</value>
-                    </entry>
-                    <entry>
-                        <key>use-transactions</key>
-                        <value>false</value>
-                    </entry>
-                    <entry>
-                        <key>attribute-name-regex</key>
-                    </entry>
-                    <entry>
-                        <key>message-header-encoding</key>
-                        <value>UTF-8</value>
-                    </entry>
-                    <entry>
-                        <key>kafka-key</key>
-                    </entry>
-                    <entry>
-                        <key>key-attribute-encoding</key>
-                        <value>utf-8</value>
-                    </entry>
-                    <entry>
-                        <key>message-demarcator</key>
+                        <key>message-key-field</key>
                     </entry>
                     <entry>
                         <key>max.request.size</key>
@@ -1187,7 +1230,7 @@
                 <yieldDuration>1 sec</yieldDuration>
             </config>
             <executionNodeRestricted>false</executionNodeRestricted>
-            <name>PublishKafka_2_0</name>
+            <name>PublishKafkaRecord_2_0</name>
             <relationships>
                 <autoTerminate>true</autoTerminate>
                 <name>failure</name>
@@ -1198,120 +1241,14 @@
             </relationships>
             <state>STOPPED</state>
             <style/>
-            <type>org.apache.nifi.processors.kafka.pubsub.PublishKafka_2_0</type>
+            <type>org.apache.nifi.processors.kafka.pubsub.PublishKafkaRecord_2_0</type>
         </processors>
         <processors>
-            <id>e040cbf6-a700-3643-0000-000000000000</id>
-            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
-            <position>
-                <x>616.4201354980469</x>
-                <y>3.4531478881835938</y>
-            </position>
-            <bundle>
-                <artifact>nifi-standard-nar</artifact>
-                <group>org.apache.nifi</group>
-                <version>1.9.2</version>
-            </bundle>
-            <config>
-                <bulletinLevel>WARN</bulletinLevel>
-                <comments></comments>
-                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
-                <descriptors>
-                    <entry>
-                        <key>Destination</key>
-                        <value>
-                            <name>Destination</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Return Type</key>
-                        <value>
-                            <name>Return Type</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Path Not Found Behavior</key>
-                        <value>
-                            <name>Path Not Found Behavior</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Null Value Representation</key>
-                        <value>
-                            <name>Null Value Representation</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>twitter.lang</key>
-                        <value>
-                            <name>twitter.lang</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>twitter.text</key>
-                        <value>
-                            <name>twitter.text</name>
-                        </value>
-                    </entry>
-                </descriptors>
-                <executionNode>ALL</executionNode>
-                <lossTolerant>false</lossTolerant>
-                <penaltyDuration>30 sec</penaltyDuration>
-                <properties>
-                    <entry>
-                        <key>Destination</key>
-                        <value>flowfile-attribute</value>
-                    </entry>
-                    <entry>
-                        <key>Return Type</key>
-                        <value>auto-detect</value>
-                    </entry>
-                    <entry>
-                        <key>Path Not Found Behavior</key>
-                        <value>ignore</value>
-                    </entry>
-                    <entry>
-                        <key>Null Value Representation</key>
-                        <value>empty string</value>
-                    </entry>
-                    <entry>
-                        <key>twitter.lang</key>
-                        <value>$.lang</value>
-                    </entry>
-                    <entry>
-                        <key>twitter.text</key>
-                        <value>$.text</value>
-                    </entry>
-                </properties>
-                <runDurationMillis>0</runDurationMillis>
-                <schedulingPeriod>0 sec</schedulingPeriod>
-                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-                <yieldDuration>1 sec</yieldDuration>
-            </config>
-            <executionNodeRestricted>false</executionNodeRestricted>
-            <name>EvaluateJsonPath</name>
-            <relationships>
-                <autoTerminate>true</autoTerminate>
-                <name>failure</name>
-            </relationships>
-            <relationships>
-                <autoTerminate>false</autoTerminate>
-                <name>matched</name>
-            </relationships>
-            <relationships>
-                <autoTerminate>true</autoTerminate>
-                <name>unmatched</name>
-            </relationships>
-            <state>STOPPED</state>
-            <style/>
-            <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
-        </processors>
-        <processors>
-            <id>f2fb19d1-a930-3d17-0000-000000000000</id>
+            <id>88202f5c-1f01-3641-0000-000000000000</id>
             <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
             <position>
                 <x>0.0</x>
-                <y>266.07273864746094</y>
+                <y>289.53451509931097</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1504,7 +1441,7 @@
                     </entry>
                     <entry>
                         <key>Remote URL</key>
-                        <value>https://cloud.iexapis.com/stable/stock/market/collection/sector?collectionName=Technology&amp;token=pk_e3eb0a96716240a4a56a31e95868cb10</value>
+                        <value>https://cloud.iexapis.com/stable/stock/market/collection/sector?collectionName=Technology&amp;token=your_token</value>
                     </entry>
                     <entry>
                         <key>SSL Context Service</key>
@@ -1627,16 +1564,102 @@
                 <autoTerminate>true</autoTerminate>
                 <name>Retry</name>
             </relationships>
-            <state>STOPPED</state>
+            <state>DISABLED</state>
             <style/>
             <type>org.apache.nifi.processors.standard.InvokeHTTP</type>
         </processors>
         <processors>
-            <id>f3cfa6b9-e566-3a4c-0000-000000000000</id>
+            <id>a7479531-ff81-3f39-0000-000000000000</id>
             <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
             <position>
-                <x>921.853432360311</x>
-                <y>261.92627720665394</y>
+                <x>1183.0786010278662</x>
+                <y>297.2584228515625</y>
+            </position>
+            <bundle>
+                <artifact>nifi-update-attribute-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Delete Attributes Expression</key>
+                        <value>
+                            <name>Delete Attributes Expression</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Store State</key>
+                        <value>
+                            <name>Store State</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Stateful Variables Initial Value</key>
+                        <value>
+                            <name>Stateful Variables Initial Value</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>canonical-value-lookup-cache-size</key>
+                        <value>
+                            <name>canonical-value-lookup-cache-size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>schema.name</key>
+                        <value>
+                            <name>schema.name</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Delete Attributes Expression</key>
+                    </entry>
+                    <entry>
+                        <key>Store State</key>
+                        <value>Do not store state</value>
+                    </entry>
+                    <entry>
+                        <key>Stateful Variables Initial Value</key>
+                    </entry>
+                    <entry>
+                        <key>canonical-value-lookup-cache-size</key>
+                        <value>100</value>
+                    </entry>
+                    <entry>
+                        <key>schema.name</key>
+                        <value>quotes3-value</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>UpdateAttribute</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
+        </processors>
+        <processors>
+            <id>bd1ee00c-7ce9-3e5d-0000-000000000000</id>
+            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
+            <position>
+                <x>1226.6925964355469</x>
+                <y>37.45725985028753</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -1649,15 +1672,15 @@
                 <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
                 <descriptors>
                     <entry>
-                        <key>JsonPath Expression</key>
+                        <key>Routing Strategy</key>
                         <value>
-                            <name>JsonPath Expression</name>
+                            <name>Routing Strategy</name>
                         </value>
                     </entry>
                     <entry>
-                        <key>Null Value Representation</key>
+                        <key>tweet</key>
                         <value>
-                            <name>Null Value Representation</name>
+                            <name>tweet</name>
                         </value>
                     </entry>
                 </descriptors>
@@ -1666,12 +1689,12 @@
                 <penaltyDuration>30 sec</penaltyDuration>
                 <properties>
                     <entry>
-                        <key>JsonPath Expression</key>
-                        <value>$[*]</value>
+                        <key>Routing Strategy</key>
+                        <value>Route to Property name</value>
                     </entry>
                     <entry>
-                        <key>Null Value Representation</key>
-                        <value>empty string</value>
+                        <key>tweet</key>
+                        <value>${twitter.text:toLower():contains("google"):and(${twitter.lang:equals("en")})}</value>
                     </entry>
                 </properties>
                 <runDurationMillis>0</runDurationMillis>
@@ -1680,23 +1703,125 @@
                 <yieldDuration>1 sec</yieldDuration>
             </config>
             <executionNodeRestricted>false</executionNodeRestricted>
-            <name>SplitJson</name>
+            <name>RouteOnAttribute</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>tweet</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>unmatched</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
+        </processors>
+        <processors>
+            <id>e3febb64-9cc5-35c3-0000-000000000000</id>
+            <parentGroupId>7cffa529-3e6b-37ca-0000-000000000000</parentGroupId>
+            <position>
+                <x>616.4201354980469</x>
+                <y>26.91492434003362</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.2</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Destination</key>
+                        <value>
+                            <name>Destination</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Return Type</key>
+                        <value>
+                            <name>Return Type</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Path Not Found Behavior</key>
+                        <value>
+                            <name>Path Not Found Behavior</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>
+                            <name>Null Value Representation</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>twitter.lang</key>
+                        <value>
+                            <name>twitter.lang</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>twitter.text</key>
+                        <value>
+                            <name>twitter.text</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Destination</key>
+                        <value>flowfile-attribute</value>
+                    </entry>
+                    <entry>
+                        <key>Return Type</key>
+                        <value>auto-detect</value>
+                    </entry>
+                    <entry>
+                        <key>Path Not Found Behavior</key>
+                        <value>ignore</value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>empty string</value>
+                    </entry>
+                    <entry>
+                        <key>twitter.lang</key>
+                        <value>$.lang</value>
+                    </entry>
+                    <entry>
+                        <key>twitter.text</key>
+                        <value>$.text</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>EvaluateJsonPath</name>
             <relationships>
                 <autoTerminate>true</autoTerminate>
                 <name>failure</name>
             </relationships>
             <relationships>
-                <autoTerminate>true</autoTerminate>
-                <name>original</name>
+                <autoTerminate>false</autoTerminate>
+                <name>matched</name>
             </relationships>
             <relationships>
-                <autoTerminate>false</autoTerminate>
-                <name>split</name>
+                <autoTerminate>true</autoTerminate>
+                <name>unmatched</name>
             </relationships>
             <state>STOPPED</state>
             <style/>
-            <type>org.apache.nifi.processors.standard.SplitJson</type>
+            <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
         </processors>
     </snippet>
-    <timestamp>07/12/2019 09:11:35 CEST</timestamp>
+    <timestamp>07/15/2019 10:07:12 CEST</timestamp>
 </template>
