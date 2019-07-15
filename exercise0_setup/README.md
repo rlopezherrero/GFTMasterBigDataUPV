@@ -24,8 +24,11 @@ In this exercise you will understand the software requirements, and how to do an
 
 ## Initial Setup
 
-* Install IDE, Maven and GIT
-* Clone the course exercise repository:
-```
-git clone https://github.com/rlopezherrero/GFTMasterBigDataUPV
-```
+* Install IDE
+* Download and unzip Maven
+* Download the code with any of these two otions:
+  # Install GIT and clone the project
+  ```
+  git clone https://github.com/rlopezherrero/GFTMasterBigDataUPV
+  ```
+  # Clone the course exercise repository: https://github.com/rlopezherrero/GFTMasterBigDataUPV (click on "Clone or download")
