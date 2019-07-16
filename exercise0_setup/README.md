@@ -35,4 +35,4 @@ In this exercise you will understand the software requirements, and how to do an
   git clone https://github.com/rlopezherrero/GFTMasterBigDataUPV
   ```
 
-  2. Clone the course exercise repository: https://github.com/rlopezherrero/GFTMasterBigDataUPV (click on "Clone or download")
+  2. Download the course exercise directly from the repository: https://github.com/rlopezherrero/GFTMasterBigDataUPV (click on "Clone or download")
