@@ -93,7 +93,7 @@ public class StreamingTwitterJob {
 		// use a ElasticsearchSink.Builder to create an ElasticsearchSink
 		ElasticsearchSink.Builder<GenericRecord> esSinkBuilder = new ElasticsearchSink.Builder<>(
 		    httpHosts,
-		    new ExtendedElasticSink(this.appConfig.getElasticConf().getTwitterIndex()));
+		    new ExtendedElasticSink(this.appConfig.getElasticConf().getTwitterIndex(),this.appConfig.getElasticConf().getTwitterType()));
 		
 		// configuration for the bulk requests; this instructs the sink to emit after every element, otherwise they would be buffered
 		esSinkBuilder.setBulkFlushMaxActions(1);

@@ -10,13 +10,11 @@ import java.util.Properties;
 import org.apache.avro.generic.GenericRecord;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import org.apache.flink.streaming.connectors.elasticsearch6.ElasticsearchSink;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer010;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducer010;
 import org.apache.http.HttpHost;
 
 import com.gft.upv.config.AppConfig;
-import com.gft.upv.flink.process.StockElasticSink;
 import com.gft.upv.serde.GenericSchemaRegistrySerdeSchema;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
@@ -90,10 +88,10 @@ public class StreamingStockJob {
 		httpHosts.add(new HttpHost(this.appConfig.getElasticConf().getHost(), this.appConfig.getElasticConf().getPort(), "http"));
 		
 		//TODO Exercise 3 use a ElasticsearchSink.Builder an use ElasticSink and replace FlinkKafkaproducer Sink
-		
 		//TODO Exercise 3 configure bulk requests; this instructs the sink to emit after every element, otherwise they would be buffered
+		//Here you can find documentation --> https://ci.apache.org/projects/flink/flink-docs-stable/dev/connectors/elasticsearch.html
 					
-		quotesEnriched.addSink(new FlinkKafkaProducer010<>("quotesTransformed", serde, jobProperties));
+		quotesStream.addSink(new FlinkKafkaProducer010<>("quotesTransformed", serde, jobProperties));
 	}
 	
 	public void launchPipeline() throws Exception{
