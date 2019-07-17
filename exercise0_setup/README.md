@@ -5,12 +5,14 @@ In this exercise you will understand the software requirements, and how to do an
 ## Software requirements
 
 * IDE for Java development (your choice)
-  * https://www.jetbrains.com/idea/download/
+  * https://www.jetbrains.com/idea/download/ (Choose InteliJ Community)
   * https://www.eclipse.org/downloads/packages/
 * Maven (for dependencies Management)
   * https://maven.apache.org/download.cgi
 * GIT client (for code  management)
   * https://git-scm.com/download/win
+* Java Virtual Machine
+  * https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html
 
 ## Architecture software
 

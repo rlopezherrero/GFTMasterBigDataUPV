@@ -40,12 +40,18 @@ confluent-5.2.2\bin\windows\schema-registry-start.bat confluent-5.2.2\etc\schema
 	curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" --data @quotesSchema.json http://localhost:8081/subjects/quotes-value/versions
 	curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" --data @tweetsSchema.json http://localhost:8081/subjects/tweets-value/versions
 	```
+* Check on your ide that you have maven configured. 
 
 
 ## Development
 
 * Nifi
-	* Replace File sink box and with Kafka publisher box,  topics to  be used are quotes and  twitter.
+	* Upload Template nifi/twitter_quotes_upv_ingestor.xml
+	* Configure GetTwitter box access credentials (Consumer and Access Token)
+	* Configure IEX Cloud token on InvokeHTTP box rest call URL.
+	* Configure UpdateAtribute box adding schema.name property for schema registry (Hint should be topicname-value)
+	* Configure PublishKafkaRecord boxes Kafka url (port is 9092) and the topic names (tweets and quotes)
+	* Configure EvaluateJsonPath to add Tweets over Google, Microsoft, Uber, Twitter, Facebook. 
 * Flink processing	
 	* Configure companies filter on src/main/java/com/gft/upv/flink/proccess/FilterCompanies.java. You can  get in-scope companies from appConfig.getInScopeCompanies()
 	* Configure enrichment on src/main/java/com/gft/upv/flink/proccess/EnrichCompany.java
