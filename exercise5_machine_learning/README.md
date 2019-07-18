@@ -19,4 +19,4 @@ In this exercise you will explore the data and build a simple classifier.
 	* http://localhost:8888
 	
 ## Development
-	* Load notebook  and follow the instructions there. 
+* Load notebook  and follow the instructions there. 
