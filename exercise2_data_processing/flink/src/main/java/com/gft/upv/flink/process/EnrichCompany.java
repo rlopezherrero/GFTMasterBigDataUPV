@@ -35,7 +35,7 @@ public class EnrichCompany extends ProcessFunction<GenericRecord, GenericRecord>
 			quoteEnriched.put(field.name(), quote.get(field.name()));
 		}
 		
-		//TODO Exercise 2 get company static data from the map and add thosee fields to quoteEnriched
+		//TODO Exercise 2 get company static data from the map and add those fields to quoteEnriched
     	
 		
         collector.collect(quoteEnriched);
