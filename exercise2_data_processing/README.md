@@ -10,8 +10,10 @@ Download Kafka stack and visualization tool:
 
 * Confluent Kafka stack: [Confluent 5.2.2](http://packages.confluent.io/archive/5.2/confluent-5.2.2-2.11.tar.gz?_ga=2.174462370.1890803127.1563567511-395073974.1561650126)
 * Download Schema registry launcher for windows (download zip from repository): https://github.com/renukaradhya/confluentplatform
-* Kafka tool & Avro plugin: http://www.kafkatool.com/ , https://github.com/laymain/kafka-tool-avro
-
+* Kafka tool & Avro plugin:
+	* Download installer : http://www.kafkatool.com/ 
+	* Download avro pluggin: https://github.com/laymain/kafka-tool-avro/releases/download/1.0.2/kafka-tool-avro-1.0.2-jar-with-dependencies.jar
+	* Copy kafka-tool-avro-1.0.2-jar-with-dependencies.jar to kafkaTool pluggins folder. 
 Unzip and launch it:
 
 * Zookeeper :
@@ -41,7 +43,6 @@ confluent-5.2.2\bin\windows\schema-registry-start.bat confluent-5.2.2\etc\schema
 	```
 * Check on your ide that you have maven configured.
 
-
 ## Development
 
 * **NiFi**
@@ -51,11 +52,18 @@ confluent-5.2.2\bin\windows\schema-registry-start.bat confluent-5.2.2\etc\schema
 	* Configure IEX Cloud token on InvokeHTTP box rest call URL.
 	* Configure UpdateAtribute box adding schema.name property for schema registry (**Hint**: should be topicname-value)
 	* Configure PublishKafkaRecord boxes Kafka URL (port is 9092) and the topic names (tweets and quotes)
-	* Configure RouteOnAtribute box and filter over Microsoft, Uber, Twitter, Facebook additionally to the Google already defined. 
+	* Configure RouteOnAtribute box and filter over Microsoft, Uber, Twitter, Facebook additionally to the Google already defined.
+	* Check that the messages are populated on the topics:
+		* Launch kafka tool, and leave default parameters.
+		* Connect to tweets/quotes topics. 
+		* Select Properties, message type to Avro. 
 * **Flink processing**
-	* Configure companies filter on `src/main/java/com/gft/upv/flink/proccess/FilterCompanies.java`. You can  get in-scope companies from appConfig.getInScopeCompanies()
-	* Configure enrichment on `src/main/java/com/gft/upv/flink/proccess/EnrichCompany.java`
-	* Add those  two steps on `src/main/java/com/gft/upv/flink/StreaminStockJob.java`
+	* Filter the quotes for a list of 10 main technological companies (already defined on appConfig.properties file) 
+		* Configure companies filter on `src/main/java/com/gft/upv/flink/proccess/FilterCompanies.java`. You can  get in-scope companies from appConfig.getInScopeCompanies()
+	* Enrich quotes messages data adding companies information 
+		* Configure enrichment on `src/main/java/com/gft/upv/flink/proccess/EnrichCompany.java`
+	* Add those steps to filter the main companies and add companies static data.  
+		* Add those  two steps on `src/main/java/com/gft/upv/flink/StreaminStockJob.java`
 * **Kafa tool for Output Visualization**
 	* Connect  to quotesEnriched topic and see output messages.
 
