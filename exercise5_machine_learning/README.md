@@ -15,8 +15,8 @@ In this exercise you will explore the data and build a simple classifier.
 		* `pip install sklearn`
 
 * Launch Jupyter notebook:
-  * ADD HOW TO LAUNCH IT
-	* http://localhost:8888
+  * Run following on comand line `jupyter notebook`
+  * Open it on the browser: http://localhost:8888
 
 ## Development
 * Load notebook and follow the instructions there.
