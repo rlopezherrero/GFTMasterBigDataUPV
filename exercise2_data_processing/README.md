@@ -12,7 +12,7 @@ Download Kafka stack and visualization tool:
 * Download Schema registry launcher for windows:
 	* https://github.com/renukaradhya/confluentplatform/blob/master/bin/windows/schema-registry-start.bat
 	* https://github.com/renukaradhya/confluentplatform/blob/master/bin/windows/schema-registry-run-class.bat
-* kafka tool & avro pluggin: http://www.kafkatool.com/ , https://github.com/laymain/kafka-tool-avro
+* Kafka tool & Avro plugin: http://www.kafkatool.com/ , https://github.com/laymain/kafka-tool-avro
 
 Unzip and launch it:
 
@@ -40,23 +40,23 @@ confluent-5.2.2\bin\windows\schema-registry-start.bat confluent-5.2.2\etc\schema
 	curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" --data @quotesSchema.json http://localhost:8081/subjects/quotes-value/versions
 	curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" --data @tweetsSchema.json http://localhost:8081/subjects/tweets-value/versions
 	```
-* Check on your ide that you have maven configured. 
+* Check on your ide that you have maven configured.
 
 
 ## Development
 
-* Nifi
-	* Upload Template nifi/twitter_quotes_upv_ingestor.xml
+* **NiFi**
+	* Upload Template `nifi/twitter_quotes_upv_ingestor.xml`
 	* Configure GetTwitter box access credentials (Consumer and Access Token)
 	* Configure IEX Cloud token on InvokeHTTP box rest call URL.
-	* Configure UpdateAtribute box adding schema.name property for schema registry (Hint should be topicname-value)
-	* Configure PublishKafkaRecord boxes Kafka url (port is 9092) and the topic names (tweets and quotes)
-	* Configure EvaluateJsonPath to add Tweets over Google, Microsoft, Uber, Twitter, Facebook. 
-* Flink processing	
+	* Configure UpdateAtribute box adding schema.name property for schema registry (**Hint**: should be topicname-value)
+	* Configure PublishKafkaRecord boxes Kafka URL (port is 9092) and the topic names (tweets and quotes)
+	* Configure EvaluateJsonPath to add Tweets over Google, Microsoft, Uber, Twitter, Facebook.
+* **Flink processing**
 	* Configure companies filter on src/main/java/com/gft/upv/flink/proccess/FilterCompanies.java. You can  get in-scope companies from appConfig.getInScopeCompanies()
 	* Configure enrichment on src/main/java/com/gft/upv/flink/proccess/EnrichCompany.java
 	* Add those  two steps on src/main/java/com/gft/upv/flink/StreaminStockJob.java
-* Kafa tool for Output Visualization
-	* Connect  to quotesEnriched topic and see output messages. 
-	
+* **Kafa tool for Output Visualization**
+	* Connect  to quotesEnriched topic and see output messages.
+
 In case you need help, you can check Flink API here --> https://ci.apache.org/projects/flink/flink-docs-release-1.8/dev/datastream_api.html
