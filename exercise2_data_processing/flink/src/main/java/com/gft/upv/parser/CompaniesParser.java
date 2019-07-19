@@ -2,6 +2,7 @@ package com.gft.upv.parser;
 
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
+import java.io.File;
 import java.io.InputStream;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
@@ -35,7 +36,7 @@ public class CompaniesParser {
     }
     
     private static Map<String,GenericRecord> parseCompaniesJson(SchemaConfig schemaConfig) throws Exception {
-    	Path path = FileSystems.getDefault().getPath("src\\main\\resources\\companies.json");
+    	Path path = FileSystems.getDefault().getPath("src"+File.separator+"main"+File.separator+"resources"+File.separator+"companies.json");
     	List<String> companiesStaticData = Files.readAllLines(path);	       	
            	 
     	HashMap<String,GenericRecord> companiesMap = new HashMap<String,GenericRecord>(); 
