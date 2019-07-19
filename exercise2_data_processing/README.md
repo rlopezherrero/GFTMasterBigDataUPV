@@ -13,7 +13,8 @@ Download Kafka stack and visualization tool:
 * Kafka tool & Avro plugin:
 	* Download installer : http://www.kafkatool.com/ 
 	* Download avro pluggin: https://github.com/laymain/kafka-tool-avro/releases/download/1.0.2/kafka-tool-avro-1.0.2-jar-with-dependencies.jar
-	* Copy kafka-tool-avro-1.0.2-jar-with-dependencies.jar to kafkaTool pluggins folder. 
+	* Copy kafka-tool-avro-1.0.2-jar-with-dependencies.jar to kafkaTool pluggins folder.
+	
 Unzip and launch it:
 
 * Zookeeper :
