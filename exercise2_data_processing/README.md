@@ -58,6 +58,7 @@ confluent-5.2.2\bin\windows\schema-registry-start.bat confluent-5.2.2\etc\schema
 		* Launch kafka tool, and leave default parameters.
 		* Connect to tweets/quotes topics. 
 		* Select Properties, message type to Avro. 
+		* Read de data, and on the  pop-up window asking for Schema registry URL  indroduce it (http://localhost:8081)
 * **Flink processing**
 	* Filter the quotes for a list of 10 main technological companies (already defined on appConfig.properties file) 
 		* Configure companies filter on `src/main/java/com/gft/upv/flink/proccess/FilterCompanies.java`. You can  get in-scope companies from appConfig.getInScopeCompanies()
