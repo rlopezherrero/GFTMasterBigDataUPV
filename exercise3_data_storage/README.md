@@ -49,7 +49,6 @@ PUT quotes
 * Go to Dev Tools and execute the following query and you will get quotes indexed:
 
 ```
-```
 GET quotes/_search
 {
   "size": 10
