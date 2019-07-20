@@ -64,10 +64,10 @@ PUT tweets
 
 * Launch `src/main/java/com/gft/upv/flink/TwitterStockJob.java` (pass twitter topic as argument)
 * Go to Management --> Kibana --> Index Patterns
-* Create twitter (twitter*) pattern
+* Create twitter (tweets*) pattern
 * Go to Dev Tools and execute following query and you will get quotes indexed:
 ```
-GET twitter/_search
+GET tweets/_search
 {
   "size": 10
 
