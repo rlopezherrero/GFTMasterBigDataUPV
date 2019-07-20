@@ -5,11 +5,11 @@ In this exercise you will visualize stored data and create a dashboard.
 ![Exercise architecture](../img/architecture_exercise4.png)
 
 ## Development
-* Enter on Kibana --> http://localhost:56001
+* Enter Kibana: http://localhost:5601
 * Go to Visualization --> Add visualization
 * Create two visualization Panes over quotes index (remember to Save the visualization for every pane)
 	* Create a Line Visualization to show price evolution of Google Company (remember to Save the visualization).
-  * **Hints**:
+  	**Hints**:
 		* Choose average latestPrice on Y axis
 		* Add two buckets one based on latestUpdate and other based on significant terms over companyName.
 		* Filter on google.

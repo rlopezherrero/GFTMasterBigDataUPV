@@ -25,14 +25,29 @@ bin\kibana
 
 ## Development
 
+* Access to Kibana (http://localhost:5601)
+* Go to Dev Tools and execute the following query and Create mapping for latestUpdate field
+```
+PUT quotes
+{
+  "mappings": {
+    "properties": {
+      "latestUpdate": {
+        "type": "date" 
+      }
+    }
+  }
+}
+```
 * Evolve the code used on exercise 2 to persist processing output on elasticsearch. 
 * Replace kafka sink with Elastic Sink on Stock pipeline on `src/main/java/com/gft/upv/flink/StreaminStockJob.java`
-* Implement document storage on `src/main/java/com/gft/upv/flink/proccess/ExtendedElasticSink.java` (Follow instructions on https://ci.apache.org/projects/flink/flink-docs-stable/dev/connectors/elasticsearch.html)
+* Implement document storage using Elastic Sinkc connector `src/main/java/com/gft/upv/flink/proccess/ExtendedElasticSink.java` (Follow instructions on https://ci.apache.org/projects/flink/flink-docs-stable/dev/connectors/elasticsearch.html using Java Elastic Search 6.x example )
 * Launch `StreamingStokJob` on the IDE, (provide the topic parameter)
-* Access to Kibana (localhost:5661)
+* Access to Kibana (http://localhost:5601)
 * Go to Management --> Kibana --> Index Patterns.
 * Create quotes (quotes*) pattern.
 * Go to Dev Tools and execute the following query and you will get quotes indexed:
+
 ```
 GET quotes/_search
 {
@@ -64,10 +79,10 @@ PUT tweets
 
 * Launch `src/main/java/com/gft/upv/flink/TwitterStockJob.java` (pass twitter topic as argument)
 * Go to Management --> Kibana --> Index Patterns
-* Create twitter (twitter*) pattern
+* Create twitter (tweets*) pattern
 * Go to Dev Tools and execute following query and you will get quotes indexed:
 ```
-GET twitter/_search
+GET tweets/_search
 {
   "size": 10
 
