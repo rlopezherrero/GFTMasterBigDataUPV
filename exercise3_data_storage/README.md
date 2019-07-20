@@ -34,6 +34,18 @@ bin\kibana
 * Create quotes (quotes*) pattern.
 * Go to Dev Tools and execute the following query and you will get quotes indexed:
 ```
+PUT quotes
+{
+  "mappings": {
+    "properties": {
+      "latestUpdate": {
+        "type": "date" 
+      }
+    }
+  }
+}
+```
+```
 GET quotes/_search
 {
   "size": 10
