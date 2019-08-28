@@ -6,6 +6,9 @@ In this exercise you will build a complete end to end Big Data Streaming Archite
 
 ![Exercise architecture](img/architecture.png)
 
+Here you have a detailed architecture of the exercise
+![Exercise architecture](img/DetailedArchitecture.png)
+
 ## Course outline
 
 Follow the links below to access each exercise's details, code, etc.
