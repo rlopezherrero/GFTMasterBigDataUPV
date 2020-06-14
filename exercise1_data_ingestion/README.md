@@ -53,3 +53,4 @@ At any time you can run the processors and clicking on the "Start" button (on th
 For more info on how the processors work, read the [Apache NiFi documentation](https://nifi.apache.org/docs.html).
 
 **IMPORTANT**: In case you get stuck, feel free to use the template in the "nifi" folder. You can upload it by righ-clicking on the canvas and select "Upload template".
+
