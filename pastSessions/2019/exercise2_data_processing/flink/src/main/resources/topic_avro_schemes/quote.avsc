@@ -1,0 +1,286 @@
+{
+  "name": "Quote",
+  "type": "record",
+  "namespace": "com.gft.upv.avro",
+  "fields": [
+    {
+      "name": "symbol",
+      "type": "string"
+    },
+    {
+      "name": "companyName",
+      "type": "string"
+    },
+    {
+      "name": "calculationPrice",
+      "type": "string"
+    },
+    {
+      "name": "open",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "openTime",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "close",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "closeTime",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "high",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "low",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "latestPrice",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "latestSource",
+      "type": "string"
+    },
+    {
+      "name": "latestTime",
+      "type": "string"
+    },
+    {
+      "name": "latestUpdate",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "latestVolume",
+      "type": "int"
+    },
+    {
+      "name": "iexRealtimePrice",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "iexRealtimeSize",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "iexLastUpdated",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "delayedPrice",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "delayedPriceTime",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "extendedPrice",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "extendedChange",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "extendedChangePercent",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "extendedPriceTime",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "previousClose",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "change",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "changePercent",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "iexMarketPercent",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "iexVolume",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "avgTotalVolume",
+      "type": "int"
+    },
+    {
+      "name": "iexBidPrice",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "iexBidSize",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "iexAskPrice",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "iexAskSize",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "marketCap",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "peRatio",
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    {
+      "name": "week52High",
+      "type": "float"
+    },
+    {
+      "name": "week52Low",
+      "type": "float"
+    },
+    {
+      "name": "ytdChange",
+      "type": "float"
+    },
+    {
+      "name": "exchange",
+      "type": "string"
+    },
+    {
+      "name": "industry",
+      "type": "string"
+    },
+    {
+      "name": "website",
+      "type": "string"
+    },
+    {
+      "name": "description",
+      "type": "string"
+    },
+    {
+      "name": "CEO",
+      "type": "string"
+    },
+    {
+      "name": "securityName",
+      "type": "string"
+    },
+    {
+      "name": "issueType",
+      "type": "string"
+    },
+    {
+      "name": "sector",
+      "type": "string"
+    },
+    {
+      "name": "employees",
+      "type": "int"
+    },
+    {
+      "name": "tags",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    }
+  ]
+}

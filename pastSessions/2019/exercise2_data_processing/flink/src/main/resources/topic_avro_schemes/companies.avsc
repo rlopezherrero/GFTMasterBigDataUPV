@@ -1,0 +1,58 @@
+{
+  "name": "Company",
+  "type": "record",
+  "namespace": "com.gft.upv.model",
+  "fields": [
+    {
+      "name": "symbol",
+      "type": "string"
+    },
+    {
+      "name": "companyName",
+      "type": "string"
+    },
+    {
+      "name": "exchange",
+      "type": "string"
+    },
+    {
+      "name": "industry",
+      "type": "string"
+    },
+    {
+      "name": "website",
+      "type": "string"
+    },
+    {
+      "name": "description",
+      "type": "string"
+    },
+    {
+      "name": "CEO",
+      "type": "string"
+    },
+    {
+      "name": "securityName",
+      "type": "string"
+    },
+    {
+      "name": "issueType",
+      "type": "string"
+    },
+    {
+      "name": "sector",
+      "type": "string"
+    },
+    {
+      "name": "employees",
+      "type": "int"
+    },
+    {
+      "name": "tags",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    }
+  ]
+}
