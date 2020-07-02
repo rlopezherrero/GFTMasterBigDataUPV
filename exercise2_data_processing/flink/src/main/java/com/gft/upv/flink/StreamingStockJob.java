@@ -7,19 +7,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-import org.apache.avro.generic.GenericRecord;
+import org.apache.flink.api.common.serialization.SerializationSchema;
+import org.apache.flink.formats.json.JsonNodeDeserializationSchema;
+import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.databind.node.ObjectNode;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer010;
-import org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducer010;
+import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer011;
+import org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducer011;
 import org.apache.http.HttpHost;
 
 import com.gft.upv.config.AppConfig;
-import com.gft.upv.serde.GenericSchemaRegistrySerdeSchema;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
-
-import io.confluent.kafka.serializers.KafkaAvroDeserializerConfig;
 
 
 
@@ -51,7 +50,7 @@ public class StreamingStockJob {
 	public void setupJob() throws Exception {
 	
 		ClassLoader classLoader = StreamingStockJob.class.getClassLoader();
-			
+		
 		//Load application configuration
 		InputStream is=classLoader.getResourceAsStream("application.conf");
 		InputStreamReader reader = new InputStreamReader(is);
@@ -60,13 +59,9 @@ public class StreamingStockJob {
 				
 		//Setup job properties
 		jobProperties.put("bootstrap.servers", appConfig.getKafkaConf().getKafkaBrokersUrls());
-		jobProperties.put("zookeeper.connect", appConfig.getKafkaConf().getZkUrl());
-		jobProperties.setProperty("group.id", "stockConsumer");
+	    jobProperties.setProperty("group.id", "stockConsumer");
 		jobProperties.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
-		jobProperties.put("value.deserializer", "io.confluent.kafka.serializers.KafkaAvroDeserializer");
-		jobProperties.put("schema.registry.url", appConfig.getKafkaConf().getSchemaRegistryUrl());
-		jobProperties.put(KafkaAvroDeserializerConfig.SPECIFIC_AVRO_READER_CONFIG, "true");
-		
+		jobProperties.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
 	
 	
 	}
@@ -78,10 +73,11 @@ public class StreamingStockJob {
 
 		 
 				
-		GenericSchemaRegistrySerdeSchema serde=new GenericSchemaRegistrySerdeSchema(appConfig.getKafkaConf().getSchemaRegistryUrl());
-		DataStream<GenericRecord> quotesStream = env
-			.addSource(new FlinkKafkaConsumer010<>(this.topic, serde, jobProperties));
-			
+		//Add kafka sink
+		JsonNodeDeserializationSchema serde = new JsonNodeDeserializationSchema();
+		DataStream<ObjectNode> quotesStream = env
+					.addSource(new FlinkKafkaConsumer011<>(this.topic, serde, jobProperties));
+						
 		//TODO Exercise 2 add filter and enrichement steps
 				
 		List<HttpHost> httpHosts = new ArrayList<>();
@@ -90,9 +86,16 @@ public class StreamingStockJob {
 		//TODO Exercise 3 use a ElasticsearchSink.Builder an use ElasticSink and replace FlinkKafkaproducer Sink
 		//TODO Exercise 3 configure bulk requests; this instructs the sink to emit after every element, otherwise they would be buffered
 		//Here you can find documentation --> https://ci.apache.org/projects/flink/flink-docs-stable/dev/connectors/elasticsearch.html
-					
-		quotesStream.addSink(new FlinkKafkaProducer010<>("quotesTransformed", serde, jobProperties));
-	}
+			
+		quotesStream.addSink(new FlinkKafkaProducer011<>("quotesTransformed", 
+				new SerializationSchema<ObjectNode>() {
+            		@Override
+            		public byte[] serialize( ObjectNode element ) {
+            			return element.toString().getBytes();
+            		}
+				},
+				jobProperties));
+	}	
 	
 	public void launchPipeline() throws Exception{
 		this.env.execute();
