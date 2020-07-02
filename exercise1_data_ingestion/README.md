@@ -17,7 +17,9 @@ In this exercise you will connect to your data sources and store the data into a
   * Sign up
   * Create app
 
-## Setup
+## Setup (Optional)
+
+> **NOTE**: This setup is only required if you don't want to run the architecture using Docker and you prefer to install it yourself. At your own risk. :-)
 
 Download Apache NiFi binaries (e.g. **nifi-1.9.2-bin.zip**):
 

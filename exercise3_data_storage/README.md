@@ -4,7 +4,9 @@ In this exercise you will store real-time messages on Elastic Search from Flink
 
 ![Exercise architecture](../img/architecture_exercise3.png)
 
-## Setup
+## Setup (Optional)
+
+> **NOTE**: This setup is only required if you don't want to run the architecture using Docker and you prefer to install it yourself. At your own risk. :-)
 
 Download Elastic and Kibana:
 

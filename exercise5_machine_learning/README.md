@@ -4,7 +4,9 @@ In this exercise you will explore the data and build a simple classifier.
 
 ![Exercise architecture](../img/architecture_exercise5.png)
 
-## Setup
+## Setup (Optional)
+
+> **NOTE**: This setup is only required if you don't want to run the architecture using Docker and you prefer to install it yourself. At your own risk. :-)
 
 * Jupyter Notebook install instructions: https://jupyter.org/install
 	* If you have Admin rights, install Anacoda framework: https://www.anaconda.com/distribution/
@@ -19,4 +21,5 @@ In this exercise you will explore the data and build a simple classifier.
   * Open it on the browser: http://localhost:8888
 
 ## Development
+
 * Load notebook and follow the instructions there.
