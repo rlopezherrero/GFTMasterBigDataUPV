@@ -30,22 +30,35 @@ In this exercise you will understand the software requirements, and how to do an
 
 ## Infrastructure Setup
 
-In order to launch the required infrastructure you just have to go to the "docker" folder and run the following:
+In order to **launch** the required infrastructure you just have to go to the "docker" folder and run the following:
 
-´´´
+```
 docker-compose up -d
-´´´
+```
 
 This will the following components, which will be used during the course:
 
-| Component | Description | URL/port |
+| Component | Service | Description | URL/port |
 | ------------- | ------------- | ------------- |
-| **Apache NiFi**  | Data Ingestion Tool  | http://localhost:8090  |
-| **Confluent Kafka**  | Message Broker  | localhost:9092  |
-| **Elasticsearch**  | Data storage and search engine  | http://localhost:9200  |
-| **Kibana**  | Dashboarding and Elasticsearch dev/admin tool  | http://localhost:5601  |
-| **Jupyter**  | Notebooks analytics  | http://localhost:8888  |
-| **cAdvisor**  | (Optional) Docker monitoring tool  | http://localhost:8080  |
+| **Apache NiFi**  | nifi | Data Ingestion Tool  | http://localhost:8090/nifi  |
+| **Confluent Kafka**  | broker | Message Broker  | localhost:9092  |
+| **Elasticsearch**  | elasticsearch | Data storage and search engine  | http://localhost:9200  |
+| **Kibana**  | kibana | Dashboarding and Elasticsearch dev/admin tool  | http://localhost:5601  |
+| **Jupyter**  | jupyter | Notebooks analytics  | http://localhost:8888  |
+| **cAdvisor**  | monitor | (Optional) Docker monitoring tool  | http://localhost:8080  |
+
+
+In order to **stop** the infrastructure:
+
+```
+docker-compose stop -d
+```
+
+In order to **start** the infrastructure:
+
+```
+docker-compose start -d
+```
 
 ## Development Environment Setup
 
@@ -60,3 +73,44 @@ This will the following components, which will be used during the course:
  ```
 
   2. Download the course exercise directly from the repository: https://github.com/rlopezherrero/GFTMasterBigDataUPV (click on "Clone or download")
+
+## Admin & Troubleshooting
+
+The easiest way to do many of these things is to use, either the Docker desktop console or a tool such as **[Lazydocker](https://github.com/jesseduffield/lazydocker)**:
+
+1. Download the binary: https://github.com/jesseduffield/lazydocker/releases
+2. Uncompress
+3. Run
+
+In any case, you can just do it using command line as explained in the following subsections.
+
+### Starting and stopping things
+
+In order to stop/start single service, use the following commands:
+
+```
+docker-compose start <Service>
+```
+
+Where the **<Service>** is listed in the table above ("Component list" section).
+
+### Reading the logs
+
+List the running containers first:
+
+```
+docker ps
+```
+
+Then use the following command to
+
+```
+docker logs <CONTAINER ID or NAME>
+```
+
+### Teardown (destroy everything)
+
+```
+docker-compose down -d
+```
+
