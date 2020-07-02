@@ -39,7 +39,7 @@ docker-compose up -d
 This will the following components, which will be used during the course:
 
 | Component | Service | Description | URL/port |
-| ------------- | ------------- | ------------- |
+| ------------- | ------------- | ------------- | ------------- |
 | **Apache NiFi**  | nifi | Data Ingestion Tool  | http://localhost:8090/nifi  |
 | **Confluent Kafka**  | broker | Message Broker  | localhost:9092  |
 | **Elasticsearch**  | elasticsearch | Data storage and search engine  | http://localhost:9200  |
