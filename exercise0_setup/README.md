@@ -42,6 +42,7 @@ This will the following components, which will be used during the course:
 | ------------- | ------------- | ------------- | ------------- |
 | **Apache NiFi**  | nifi | Data Ingestion Tool  | http://localhost:8090/nifi  |
 | **Confluent Kafka**  | broker | Message Broker  | localhost:9092  |
+| **Confluent Control Center**  | control-center | Kafka Manager & Monitor  |  http://localhost:9021  |
 | **Elasticsearch**  | elasticsearch | Data storage and search engine  | http://localhost:9200  |
 | **Kibana**  | kibana | Dashboarding and Elasticsearch dev/admin tool  | http://localhost:5601  |
 | **Jupyter**  | jupyter | Notebooks analytics  | http://localhost:8888  |

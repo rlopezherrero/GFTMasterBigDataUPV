@@ -22,4 +22,6 @@ In this exercise you will explore the data and build a simple classifier.
 
 ## Development
 
+> **NOTE**: If you are using the Docker instance, you will have to run it using the token. Just look at the "jupyter" service logs for the full URL (including the token).
+
 * Load notebook and follow the instructions there.
