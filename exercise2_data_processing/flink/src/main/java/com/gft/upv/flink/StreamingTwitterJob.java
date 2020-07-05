@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Properties;
 
 import org.apache.avro.generic.GenericRecord;
+import org.apache.flink.formats.json.JsonNodeDeserializationSchema;
+import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.databind.node.ObjectNode;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.connectors.elasticsearch6.ElasticsearchSink;
@@ -15,14 +17,9 @@ import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer010;
 import org.apache.http.HttpHost;
 
 import com.gft.upv.config.AppConfig;
-import com.gft.upv.flink.process.EnrichCompany;
-import com.gft.upv.flink.process.FilterCompanies;
 import com.gft.upv.flink.process.ExtendedElasticSink;
-import com.gft.upv.serde.GenericSchemaRegistrySerdeSchema;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
-
-import io.confluent.kafka.serializers.KafkaAvroDeserializerConfig;
 
 
 
@@ -66,13 +63,8 @@ public class StreamingTwitterJob {
 		jobProperties.put("zookeeper.connect", appConfig.getKafkaConf().getZkUrl());
 		jobProperties.setProperty("group.id", "stockConsumer");
 		jobProperties.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
-		//properties.put("value.serializer", "org.apache.kafka.common.serialization.ByteArraySerializer");
-		//props.put("key.serializer", "io.confluent.kafka.serializers.KafkaAvroSerializer");
-		jobProperties.put("value.deserializer", "io.confluent.kafka.serializers.KafkaAvroDeserializer");
-		jobProperties.put("schema.registry.url", appConfig.getKafkaConf().getSchemaRegistryUrl());
-		jobProperties.put(KafkaAvroDeserializerConfig.SPECIFIC_AVRO_READER_CONFIG, "true");
+		jobProperties.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
 		
-	
 		
 	}
 	
@@ -82,8 +74,8 @@ public class StreamingTwitterJob {
 		env = StreamExecutionEnvironment.getExecutionEnvironment();
 
 				
-		GenericSchemaRegistrySerdeSchema serde=new GenericSchemaRegistrySerdeSchema(appConfig.getKafkaConf().getSchemaRegistryUrl());
-		DataStream<GenericRecord> twitterStream = env
+		JsonNodeDeserializationSchema serde = new JsonNodeDeserializationSchema();
+		DataStream<ObjectNode> twitterStream = env
 			.addSource(new FlinkKafkaConsumer010<>(this.topic, serde, jobProperties));
 			
 			
@@ -91,7 +83,7 @@ public class StreamingTwitterJob {
 		httpHosts.add(new HttpHost(this.appConfig.getElasticConf().getHost(), this.appConfig.getElasticConf().getPort(), "http"));
 		
 		// use a ElasticsearchSink.Builder to create an ElasticsearchSink
-		ElasticsearchSink.Builder<GenericRecord> esSinkBuilder = new ElasticsearchSink.Builder<>(
+		ElasticsearchSink.Builder<ObjectNode> esSinkBuilder = new ElasticsearchSink.Builder<>(
 		    httpHosts,
 		    new ExtendedElasticSink(this.appConfig.getElasticConf().getTwitterIndex(),this.appConfig.getElasticConf().getTwitterType()));
 		
