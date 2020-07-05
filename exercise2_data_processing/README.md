@@ -36,7 +36,7 @@ confluent-5.2.2\bin\windows\kafka-server-start.bat confluent-5.2.2\etc\kafka\ser
 	* Configure PublishKafka boxes Kafka URL (port is 9092) and the topic names (tweets and quotes)
 	* Configure RouteOnAtribute box and filter over Microsoft, Uber, Twitter, Facebook additionally to the Google already defined.
 	* Check that the messages are populated on the topics:
-		* Use Confluent Manager
+		* Use Confluent Control Center
 * **Flink processing**
 	* Filter the quotes for a list of 10 main technological companies (already defined on appConfig.properties file) 
 		* Configure companies filter on `src/main/java/com/gft/upv/flink/proccess/FilterCompanies.java`. You can  get in-scope companies from appConfig.getInScopeCompanies()
@@ -44,7 +44,7 @@ confluent-5.2.2\bin\windows\kafka-server-start.bat confluent-5.2.2\etc\kafka\ser
 		* Configure enrichment on `src/main/java/com/gft/upv/flink/proccess/EnrichCompany.java`
 	* Add those steps to filter the main companies and add companies static data.  
 		* Add those  two steps on `src/main/java/com/gft/upv/flink/StreaminStockJob.java`
-* **Connfluent Manager for Output Visualization**
+* **Confluent Control Center for Output Visualization**
 	* Connect  to quotesEnriched topic and see output messages.
 
 In case you need help, you can check Flink API here --> https://ci.apache.org/projects/flink/flink-docs-release-1.8/dev/datastream_api.html
