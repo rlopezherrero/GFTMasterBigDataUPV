@@ -14,21 +14,14 @@ import org.elasticsearch.action.index.IndexRequest;
 public class ExtendedElasticSink implements ElasticsearchSinkFunction<ObjectNode> {
 	
 	String index;
-	String indexType;
-	
-	public ExtendedElasticSink(String index,String indexType) {
+		
+	public ExtendedElasticSink(String index) {
 		this.index=index;
-		this.indexType=indexType;
+	
 	}
 	
 	public IndexRequest createIndexRequest(ObjectNode element) {
-		
-		Map<String, Object> map = new HashMap<>();
-		
-		//TODO Exercise 3 fill Map with element values
-		//take a look  to flink documentation https://ci.apache.org/projects/flink/flink-docs-stable/dev/connectors/elasticsearch.html
-		
-		
+					
 		//TODO create a index Request
 		return null;
 	}
