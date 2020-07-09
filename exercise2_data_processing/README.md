@@ -33,10 +33,12 @@ confluent-5.2.2\bin\windows\kafka-server-start.bat confluent-5.2.2\etc\kafka\ser
 		* Rigth click, select the template that is inside GFTMasterBigDataUPV/exercise2_data_processing/nifi
 	* Configure GetTwitter box access credentials (Consumer and Access Token)
 	* Configure IEX Cloud token on InvokeHTTP box rest call URL.
-	* Configure PublishKafka boxes Kafka URL (port is 9092) and the topic names (tweets and quotes)
+	* Configure PublishKafka boxes Kafka URL (port is 29092) and the topic names (tweets and quotes)
+	> **Hint**: You should use internal docker host name for kafka. 
+
 	* Configure RouteOnAtribute box and filter over Microsoft, Uber, Twitter, Facebook additionally to the Google already defined.
 	* Check that the messages are populated on the topics:
-		* Use Confluent Control Center
+		* Use Confluent Control Center (http://localhost:9021)
 * **Flink processing**
 	* Filter the quotes for a list of 10 main technological companies (already defined on appConfig.properties file) 
 		* Configure companies filter on `src/main/java/com/gft/upv/flink/proccess/FilterCompanies.java`. You can  get in-scope companies from appConfig.getInScopeCompanies()
