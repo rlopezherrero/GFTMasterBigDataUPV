@@ -13,7 +13,6 @@ public class AppConfig implements Serializable {
 
     private final Config config;
     private final KafkaConfig kafkaConfig;
-    private final SchemaConfig schemaConfig;
     private final FlinkConfig flinkConfig;
     private final ElasticConfig elasticConfig;
     private final List<String> inScopeCompanies;
@@ -21,7 +20,6 @@ public class AppConfig implements Serializable {
     public AppConfig(Config conf) {
         this.config = conf;
         kafkaConfig = new KafkaConfig(conf);
-        schemaConfig = new SchemaConfig(conf);
         flinkConfig = new FlinkConfig(conf);
         elasticConfig = new ElasticConfig(conf);
         inScopeCompanies=config.getStringList("filters.inScopeCompanies");
@@ -30,7 +28,6 @@ public class AppConfig implements Serializable {
     public AppConfig(String path) {
         this.config = ConfigFactory.parseFile(new File(path));
         kafkaConfig = new KafkaConfig(config);
-        schemaConfig = new SchemaConfig(config);
         flinkConfig = new FlinkConfig(config);
         elasticConfig = new ElasticConfig(config);        
         inScopeCompanies=config.getStringList("filters.inScopeCompanies");
@@ -50,9 +47,6 @@ public class AppConfig implements Serializable {
     }
 
    
-
-    public SchemaConfig getSchemaConf() { return schemaConfig; }
-
     public ElasticConfig getElasticConf() { return elasticConfig; }
 
     
@@ -65,7 +59,6 @@ public class AppConfig implements Serializable {
         return "AppConfig{" +
                 ", kafkaConf=" + kafkaConfig +
                 ", elasticConf=" + elasticConfig +
-                ", schemaRegConf=" + schemaConfig +
                 ", conf=" + config +
                 '}';
     }

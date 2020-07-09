@@ -7,13 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-import org.apache.avro.generic.GenericRecord;
 import org.apache.flink.formats.json.JsonNodeDeserializationSchema;
 import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.databind.node.ObjectNode;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import org.apache.flink.streaming.connectors.elasticsearch6.ElasticsearchSink;
-import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer010;
+import org.apache.flink.streaming.connectors.elasticsearch7.ElasticsearchSink;
+import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer011;
 import org.apache.http.HttpHost;
 
 import com.gft.upv.config.AppConfig;
@@ -76,7 +75,7 @@ public class StreamingTwitterJob {
 				
 		JsonNodeDeserializationSchema serde = new JsonNodeDeserializationSchema();
 		DataStream<ObjectNode> twitterStream = env
-			.addSource(new FlinkKafkaConsumer010<>(this.topic, serde, jobProperties));
+			.addSource(new FlinkKafkaConsumer011<>(this.topic, serde, jobProperties));
 			
 			
 		List<HttpHost> httpHosts = new ArrayList<>();
@@ -86,7 +85,8 @@ public class StreamingTwitterJob {
 		ElasticsearchSink.Builder<ObjectNode> esSinkBuilder = new ElasticsearchSink.Builder<>(
 		    httpHosts,
 		    new ExtendedElasticSink(this.appConfig.getElasticConf().getTwitterIndex()));
-		
+				
+				
 		// configuration for the bulk requests; this instructs the sink to emit after every element, otherwise they would be buffered
 		esSinkBuilder.setBulkFlushMaxActions(1);
 
