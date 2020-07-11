@@ -59,7 +59,7 @@ If you want to check the results (files saved), they will be available in the Ni
 
 ```
 docker ps
-docker exec -it 39d23cf30486 /bin/bash
+docker exec -it <nifi_container_id> /bin/bash
 ```
 
 For more info on how the processors work, read the [Apache NiFi documentation](https://nifi.apache.org/docs.html).
