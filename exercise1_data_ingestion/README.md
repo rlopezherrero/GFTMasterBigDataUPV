@@ -55,6 +55,13 @@ In the NiFi canvas, you will need to create the following:
 
 At any time you can run the processors and clicking on the "Start" button (on the left "Operate" box). Or right click on any processor and press "Start" in order to start just that processor.
 
+If you want to check the results (files saved), they will be available in the NiFi Docker container (if using Docker). Do the following to check it:
+
+```
+docker ps
+docker exec -it 39d23cf30486 /bin/bash
+```
+
 For more info on how the processors work, read the [Apache NiFi documentation](https://nifi.apache.org/docs.html).
 
 **IMPORTANT**: In case you get stuck, feel free to use the template in the "nifi" folder. You can upload it by righ-clicking on the canvas and select "Upload template", then Drag & Drop the "Template" from the top menu.
