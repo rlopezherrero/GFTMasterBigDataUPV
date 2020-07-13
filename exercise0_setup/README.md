@@ -5,8 +5,8 @@ In this exercise you will understand the software requirements, and how to do an
 ## Software requirements
 
 * IDE for Java development (your choice)
-  * https://www.jetbrains.com/idea/download/ (Choose InteliJ Community)
   * https://www.eclipse.org/downloads/packages/
+  * https://www.jetbrains.com/idea/download/ (Choose InteliJ Community)
 * Maven (for dependencies Management)
   * https://maven.apache.org/download.cgi
 * GIT client (for code  management)
@@ -36,7 +36,7 @@ In order to **launch** the required infrastructure you just have to go to the "d
 docker-compose up -d
 ```
 
-This will the following components, which will be used during the course:
+This will launch the following components, which will be used during the course:
 
 | Component | Service | Description | URL/port |
 | ------------- | ------------- | ------------- | ------------- |
