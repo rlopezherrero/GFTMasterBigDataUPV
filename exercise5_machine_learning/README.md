@@ -19,6 +19,11 @@ In this exercise you will explore the data and build a simple classifier.
 * Launch Jupyter notebook:
   * Run following on comand line `jupyter notebook`
   * Open it on the browser: http://localhost:8888
+  
+* If it requires token get it following way:
+  * Run on command line --> docker exec docker_jupyter_1 -it bash
+  * On docker container get token --> jupyter notebook list
+  * Copy token and use it to logon --> http://localhost:8888/?token=c0d7e6262ccb700baa10bb7c51ed26922a79217f04a64faa
 
 ## Development
 
