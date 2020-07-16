@@ -2,19 +2,13 @@
 
 In this exercise you will understand the software requirements, and how to do an initial setup.
 
-## Software requirements
+The whole architecture is based on [Docker containers](https://www.docker.com/) in order to make it easier and quicker to setup. So there is no need to install each one of the components. So, to start with, make sure you have Docker installed in your PC.
 
-* IDE for Java development (your choice)
-  * https://www.jetbrains.com/idea/download/ (Choose InteliJ Community)
-  * https://www.eclipse.org/downloads/packages/
-* Maven (for dependencies Management)
-  * https://maven.apache.org/download.cgi
-* GIT client (for code  management)
-  * https://git-scm.com/download/win
-* Java Virtual Machine
-  * https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html
 * Docker Desktop
   * https://www.docker.com/products/docker-desktop
+
+If you want to learn more about the different components of the architecture, feel free to install them individually instead of using Docker. This will give you a better understanding of the components, how to run and configure them.
+This is also an option in case you have limited resources in your PC or problems running Docker.
 
 ## Architecture software
 
@@ -36,7 +30,7 @@ In order to **launch** the required infrastructure you just have to go to the "d
 docker-compose up -d
 ```
 
-This will the following components, which will be used during the course:
+This will launch the following components, which will be used during the course:
 
 | Component | Service | Description | URL/port |
 | ------------- | ------------- | ------------- | ------------- |
@@ -60,6 +54,18 @@ In order to **start** the infrastructure:
 ```
 docker-compose start -d
 ```
+
+## Software requirements
+
+* IDE for Java development (your choice)
+  * https://www.eclipse.org/downloads/packages/ (RECOMMENDED)
+  * https://www.jetbrains.com/idea/download/ (Choose InteliJ Community)
+* Maven (for dependencies Management)
+  * https://maven.apache.org/download.cgi
+* GIT client (for code  management)
+  * https://git-scm.com/download/win
+* Java Virtual Machine
+  * https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html
 
 ## Development Environment Setup
 

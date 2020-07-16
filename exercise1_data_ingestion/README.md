@@ -44,16 +44,26 @@ In the NiFi canvas, you will need to create the following:
   * You will need the tickers REST URL (see "Data Sources", adding your own token)
   * Set the scheduler to every 30 seconds
   * Link both processors (using the "Response" output), and terminate the rest of the outputs
+  * Terminate the rest of the outputs in the InvokeHTTP processor
 
 ![NiFi Configuration HTTP](../img/exercise1_nifi1.png)
 
 * Read from Twitter (**GetTwitter** processor) and save to file (**PutFile** processor)
   * You will need the credentials from your Twitter app
   * Link both processors (using the "success" output)
+  * Terminate the rest of the outputs in the GetTwitter processor
 
 ![NiFi Configuration Twitter](../img/exercise1_nifi2.png)
 
 At any time you can run the processors and clicking on the "Start" button (on the left "Operate" box). Or right click on any processor and press "Start" in order to start just that processor.
+
+If you want to **check the results** (files saved), they will be available in the NiFi Docker container (if using Docker). Do the following to check it:
+
+```
+docker ps
+docker exec -it <nifi_container_id> /bin/bash
+ls -l <folder_configured_in_PutFile_Processor>
+```
 
 For more info on how the processors work, read the [Apache NiFi documentation](https://nifi.apache.org/docs.html).
 
